@@ -1,18 +1,16 @@
 ---
 layout: page
 title: About
-description: 打码改变世界
-keywords: Zhuang Ma, 马壮
-comments: true
+description: Dreams never end.
+keywords: Qiaoyi Yin, 殷乔逸
+comments: false
 menu: 关于
 permalink: /about/
 ---
 
-我是马壮，码而生，码而立。
+谁终将声震人间，必长久深自缄默；
 
-仰慕「优雅编码的艺术」。
-
-坚信熟能生巧，努力改变人生。
+谁终将点燃闪电，必长久如云漂泊。
 
 ## 联系
 
