@@ -579,9 +579,19 @@ https://github.com
 
 有部分网站和编辑器实现了对 Markdown 里流程图和时序图的支持，比如我们使用的项目管理工具 TAPD 的在线编辑器，还有 VSCode + 插件 Markdown Preview Enhanced 等。
 
+以我们使用的项目管理工具 TAPD 的在线编辑器为例：
+
+![流程图](https://raw.githubusercontent.com/mzlogin/markdown-intro/master/assets/tapd-markdown-flowchart.png)
+
+![时序图](https://raw.githubusercontent.com/mzlogin/markdown-intro/master/assets/tapd-markdown-seq.png)
+
 ### 插入数学公式
 
-利用 JavaScript 支持了 LaTeX 公式语法。
+仍然以 TAPD 为例：
+
+![数学公式](https://raw.githubusercontent.com/mzlogin/markdown-intro/master/assets/tapd-markdown-math.png)
+
+应该是利用 JavaScript 支持了 LaTeX 公式语法。
 
 ### 用 Markdown 做 PPT
 
@@ -590,6 +600,10 @@ https://github.com
 ### 用 Markdown 写微信公众号
 
 可以将公众号素材用 Markdown 编辑好后，贴到在线排版工具以后，复制到公众号编辑器里即可。有多种页面主题和代码主题可选择。
+
+我维护的工具地址：<https://md.mazhuang.org>
+
+![微信公众号](https://raw.githubusercontent.com/mzlogin/markdown-intro/master/assets/wechat-markdown.png)
 
 ### 更多
 
@@ -603,6 +617,8 @@ https://github.com
 * ...
 
 以上功能基本都可以用 VSCode + 插件 Markdown Preview Enhanced 实现。
+
+另外可以参考我以前的一篇博客 [关于 Markdown 的一些奇技淫巧](https://mazhuang.org/2017/09/01/markdown-odd-skills/)。
 
 ## 参考
 
