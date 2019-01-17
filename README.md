@@ -1,6 +1,6 @@
-# 码志
+# 聖地亞歌
 
-我的个人博客：<https://mazhuang.org>，欢迎 Star 和 Fork。
+我的个人博客：<https://sinestroedmonce.github.io>，欢迎 Star 和 Fork。
 
 ## 概览
 
@@ -16,9 +16,9 @@
 
 ## 效果预览
 
-**[在线预览 &rarr;](https://mazhuang.org)**
+**[在线预览 &rarr;](https://sinestroedmonce.github.io)**
 
-![screenshot home](https://mazhuang.org/assets/images/screenshots/home.png)
+![screenshot home](https://sinestroedmonce.github.io/assets/images/screenshots/blog-intro.png)
 
 ## Fork 指南
 
@@ -30,23 +30,23 @@ Fork 本项目之后，还需要做一些事情才能让你的页面「正确」
 
 2. 修改域名。
 
-   如果你需要绑定自己的域名，那么修改 CNAME 文件的内容；如果不需要绑定自己的域名，那么删掉 CNAME 文件。
+   如果你需要绑定自己的域名，那么修改 CNAME 文件的内容；如果不需要绑定自己的域名，则需要删掉 CNAME 文件，若发现删除后再访问自己博客依旧出现原域名或者出现访问错误，建议清除浏览器缓存数据再重新尝试打开博客。
 
 3. 修改配置。
 
    网站的配置基本都集中在 \_config.yml 文件中，将其中与个人信息相关的部分替换成你自己的，比如网站的 url、title、subtitle 和第三方评论模块的配置等。
 
-   **评论模块：** 目前支持 disqus、gitment 和 gitalk，选用其中一种就可以了，推荐使用 gitalk。它们各自的配置指南链接在 \_config.yml 文件的 Comments 一节里都贴出来了。
+   **评论模块：** 我自己并没有开通评论功能，但是本身模板是支持 disqus、gitment 和 gitalk，选用其中一种就可以了，推荐使用 gitalk。它们各自的配置指南链接在 \_config.yml 文件的 Comments 一节里都贴出来了。
 
-   **注意：** 如果使用 disqus，因为 disqus 处理用户名与域名白名单的策略存在缺陷，请一定将 disqus.username 修改成你自己的，否则请将该字段留空。我对该缺陷的记录见 [Issues#2][3]。
+   **注意：** 如果使用 disqus，因为 disqus 处理用户名与域名白名单的策略存在缺陷，请一定将 disqus.username 修改成你自己的，否则请将该字段留空。
 
 4. 删除我的文章与图片。
 
    如下文件夹中除了 template.md 文件外，都可以全部删除，然后添加你自己的内容。
 
-   * \_posts 文件夹中是我已发布的博客文章。
-   * \_drafts 文件夹中是我尚未发布的博客文章。
-   * \_wiki 文件夹中是我已发布的 wiki 页面。
+   * \_posts 文件夹中我已发布的博客文章。
+   * \_drafts 文件夹中是尚未发布的博客文章。
+   * \_wiki 文件夹中是已发布的 wiki 页面。
    * images 文件夹中是我的文章和页面里使用的图片。
 
 5. 修改「关于」页面。
@@ -79,4 +79,3 @@ Fork 本项目之后，还需要做一些事情才能让你的页面「正确」
 
 [1]: https://github.com/mzlogin/chinese-copywriting-guidelines
 [2]: https://help.github.com/articles/setting-up-your-pages-site-locally-with-jekyll/
-[3]: https://github.com/mzlogin/mzlogin.github.io/issues/2
