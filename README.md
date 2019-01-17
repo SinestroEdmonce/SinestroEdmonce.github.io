@@ -18,7 +18,7 @@
 
 **[在线预览 &rarr;](https://sinestroedmonce.github.io)**
 
-![screenshot home](https://sinestroedmonce.github.io/assets/images/screenshots/blog-intro.png)
+![screenshot home](https://github.com/SinestroEdmonce/SinestroEdmonce.github.io/raw/master/assets/images/screenshots/blog-intro.jpg)
 
 ## Fork 指南
 
