@@ -62,7 +62,7 @@ keywords: MacOS, Ubuntu, GUI, servers
         ```
         sudo brew cask install xquartz
         ```
-    - 编辑Linux端下的配置文件（以Ubuntu为例），
+    - 编辑Linux端下的配置文件（以Ubuntu为例)。在terminal下vim打开``/etc/ssh/ssh_config``或者如果只希望某登录账户下可以使用``ssh``配置，则打开``~/.ssh/config``（可能是个新文件）。具体配置和Mac一样，不再赘述。（如果配置``/etc/ssh/sshd_config``，则是指server端）
 
 3. 在Mac端或Linux端远程连接服务器桌面。
 
