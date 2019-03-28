@@ -31,7 +31,7 @@ keywords: MacOS, Ubuntu, GUI, servers
 
 要实现远程图形访问，必须借助X11协议转发图片。X11将``xclient``端的图像发送回``xserver``端。在我们登录远程服务器这个流程中，``xserver``端为Mac端，``xclient``为Linux服务器端，比如我连接的服务器是Ubuntu。
 
-![img](https://github.com/SinestroEdmonce/MyCompiler/raw/master/Lab2/Img/Crossing%20List.png)
+![img](https://github.com/SinestroEdmonce/SinestroEdmonce.github.io/raw/master/images/posts/x11_local2server_intro.png)
 
 1. 首先需要在Linux服务器端打开X11转发。以Ubuntu为例，则需要编辑``/etc/ssh/sshd_config``配置文件，配置X11相关的转发参数为``yes``。  
 
@@ -74,9 +74,9 @@ keywords: MacOS, Ubuntu, GUI, servers
 
     - 登陆成功后可以尝试打开有图形界面的应用，这里我打开了Pycharm2018.6来测试配置情况。
 
-    ![img](https://github.com/SinestroEdmonce/MyCompiler/raw/master/Lab2/Img/Crossing%20List.png)
+        ![img](https://github.com/SinestroEdmonce/SinestroEdmonce.github.io/raw/master/images/posts/x11_pycharm_show_pic1.png)
 
-    ![img](https://github.com/SinestroEdmonce/MyCompiler/raw/master/Lab2/Img/Crossing%20List.png)
+        ![img](https://github.com/SinestroEdmonce/SinestroEdmonce.github.io/raw/master/images/posts/x11_pycharm_show_pic2.png)
 
     - **Warning：**如果Mac端登陆远程服务器后，出现以下错误描述：
 
