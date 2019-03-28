@@ -6,7 +6,7 @@ description: 一份简明的 Markdown 笔记与教程
 keywords: Markdown, VSCode
 ---
 
-可以说，因为经常需要完成``README``的撰写，所以对``Markdown``的使用越来越频繁，为了避免频繁查找各种语法，我先是从Github上面找到一个关于``Markdown``语法的笔记``fork``到了自己的仓库，现在又想自己整理一下顺便参考了mzlogin博主的[博文](https://mazhuang.org/2018/09/06/markdown-intro/)
+可以说，因为经常需要完成``README``的撰写，所以对``Markdown``的使用越来越频繁，为了避免频繁查找各种语法，我先是从Github上面找到一个关于``Markdown``语法的笔记``fork``到了自己的仓库，现在又想自己整理一下顺便参考了mzlogin博主的[博文](https://mazhuang.org/2018/09/06/markdown-intro/)。
 
 > 以下转载自mzlogin【博主:码志】
 
