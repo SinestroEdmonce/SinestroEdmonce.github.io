@@ -70,7 +70,7 @@ keywords: MacOS, Ubuntu, GUI, servers
         ssh -X {username}@{remote-server-ip}        # X要大写
         ```
 
-    - 登陆成功后可以尝试打开有图形界面的应用，这里我打开了Pycharm2018.6来测试配置情况。
+    - 登陆成功后可以尝试打开有图形界面的应用，这里我打开了``Pycharm Community 2018.3``来测试配置情况。
 
         ![img](https://github.com/SinestroEdmonce/SinestroEdmonce.github.io/raw/master/images/posts/x11_pycharm_show_pic1.png)
 
