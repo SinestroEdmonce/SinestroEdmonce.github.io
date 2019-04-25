@@ -12,7 +12,7 @@ keywords: MacOS, Ubuntu, GUI, servers
 
 说到服务器，一般来说GPU集群的服务器是没有图形界面的，因为会占用不少额外显存空间，有点浪费资源。不过，我用的这个服务器恰好有GUI界面。既然有图形界面，那我肯定得用，毕竟GUI界面确实很方便。
 
-> 在Windows操作系统上，Mircosoft配备了``mstsc``也就是远程桌面连接，可以很方便地远程连接服务器的图形界面。
+> 在Windows操作系统上，Mircosoft配备了``mstsc``也就是远程桌面连接，可以很方便地远程连接服务器的图形界面。(注意配置：``echo "xfce4-session" >~/.xsession``)
 > 还可以用``Xshell+Xmanager``来连接远程桌面。
 
 我用的是MacOS和Ubuntu16.04，需要自己去寻找方法远程连接GUI界面。  
