@@ -27,50 +27,52 @@ E: Unable to lock the administration directory (/var/lib/dpkg/), is another proc
         sudo kill -9 xxxxx      # xxxxx是进程号
         ```
 
-## 删除锁定文件
+- 删除锁定文件:
 
-- 锁定的文件会阻止``Linux``系统中某些文件或者数据的访问，这个概念也存在于``Windows``或者其他的操作系统中。  
-一旦运行了``apt-get``或者``apt``命令，锁定文件将会创建于``/var/lib/apt/lists/``，``/var/lib/dpkg/``，``/var/cache/apt/archives/``中，这有助于运行中的``apt-get``或者``apt``进程能够避免被其它需要使用相同文件的用户或者系统进程所打断。当该进程执行完毕后，锁定文件将会删除。
+    - 锁定的文件会阻止``Linux``系统中某些文件或者数据的访问，这个概念也存在于``Windows``或者其他的操作系统中。  
+    一旦运行了``apt-get``或者``apt``命令，锁定文件将会创建于``/var/lib/apt/lists/``，``/var/lib/dpkg/``，``/var/cache/apt/archives/``中，这有助于运行中的``apt-get``或者``apt``进程能够避免被其它需要使用相同文件的用户或者系统进程所打断。当该进程执行完毕后，锁定文件将会删除。
 
-- 移除对应目录下的锁文件:
-    ```bash
-    sudo rm -rf /var/lib/dpkg/lock
-    ```
-    或
-    ```bash
-    sudo rm -rf /var/lib/dpkg/lock-frontend
-    ```
+    - 移除对应目录下的锁文件:
+        ```bash
+        sudo rm -rf /var/lib/dpkg/lock
+        ```
+        或
+        ```bash
+        sudo rm -rf /var/lib/dpkg/lock-frontend
+        ```
 
-- 强制重新配置软件包:
-    ```bash
-    sudo dpkg --configure -a
-    ```
+    - 强制重新配置软件包:
+        ```bash
+        sudo dpkg --configure -a
+        ```
 
-- 更新软件包源文件:
-    ```bash
-    sudo apt update
-    ```
+    - 更新软件包源文件:
+        ```bash
+        sudo apt update
+        ```
     
-## 删除锁定文件后配置软件包可能出现的问题
-- 问题描述:
-    ```
-    dpkg: error: parsing file '/var/lib/dpkg/updates/0006' near line 0: newline in field name `#padding'
-    ```
+- 删除锁定文件后配置软件包可能出现的问题
 
-- 解决方法:
-    ```bash
-    sudo rm -rf /var/lib/dpkg/updates/0006
-    sudo dpkg --configure -a
-    sudo apt update
-    ```
-    或
-    ```bash
-    sudo rm -rf /var/lib/dpkg/updates/*
-    sudo dpkg --configure -a
-    sudo apt update
-    ```
+    - 问题描述:
+        ```
+        dpkg: error: parsing file '/var/lib/dpkg/updates/0006' near line 0: newline in field name `#padding'
+        ```
+
+    - 解决方法:
+        ```bash
+        sudo rm -rf /var/lib/dpkg/updates/0006
+        sudo dpkg --configure -a
+        sudo apt update
+        ```
+        或
+        ```bash
+        sudo rm -rf /var/lib/dpkg/updates/*
+        sudo dpkg --configure -a
+        sudo apt update
+        ```
 
 ## 重新执行相关安装
+
 ```bash
 sudo apt-get install xxxx       # xxxx是软件包名
 ```
