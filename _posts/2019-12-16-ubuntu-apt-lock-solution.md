@@ -8,14 +8,14 @@ keywords: Ubuntu, apt-get, lock
 
 在Linux相关系统下更新apt或者使用apt-get命令安装软件包时常会出现dpkg相关文件被锁定的情况。个人总结了和该情况相关的一些解决方法，我自己也时常遇到这个问题，也当做是个cookbook来用，遇到的时候查看一下就能解决。
 
-## 出现的问题:
+## 出现的问题
 ```
 E: Could not get lock /var/lib/dpkg/lock - open (11: Resource temporarily unavailable)
 
 E: Unable to lock the administration directory (/var/lib/dpkg/), is another process using it?
 ```
 
-## 解决方法：
+## 解决方法
 
 - 结束所有的``apt``进程:  
     - 查找所有``apt``相关的进程:
@@ -27,7 +27,7 @@ E: Unable to lock the administration directory (/var/lib/dpkg/), is another proc
         sudo kill -9 xxxxx      # xxxxx是进程号
         ```
 
-## 删除锁定文件:
+## 删除锁定文件
 
 - 锁定的文件会阻止``Linux``系统中某些文件或者数据的访问，这个概念也存在于``Windows``或者其他的操作系统中。  
 一旦运行了``apt-get``或者``apt``命令，锁定文件将会创建于``/var/lib/apt/lists/``，``/var/lib/dpkg/``，``/var/cache/apt/archives/``中，这有助于运行中的``apt-get``或者``apt``进程能够避免被其它需要使用相同文件的用户或者系统进程所打断。当该进程执行完毕后，锁定文件将会删除。
@@ -51,7 +51,7 @@ E: Unable to lock the administration directory (/var/lib/dpkg/), is another proc
     sudo apt update
     ```
     
-## 删除锁定文件后配置软件包可能出现的问题:
+## 删除锁定文件后配置软件包可能出现的问题
 - 问题描述:
     ```
     dpkg: error: parsing file '/var/lib/dpkg/updates/0006' near line 0: newline in field name `#padding'
@@ -70,7 +70,7 @@ E: Unable to lock the administration directory (/var/lib/dpkg/), is another proc
     sudo apt update
     ```
 
-## 最后再重新执行相关安装
+## 重新执行相关安装
 ```bash
 sudo apt-get install xxxx       # xxxx是软件包名
 ```
