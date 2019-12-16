@@ -6,6 +6,10 @@ description: 在Ubuntu18.04上直接通过apt-get等相关原生指令安装npm�
 keywords: Ubuntu, NodeJs, npm, install
 ---
 
+下学期可能要接触全栈开发，打算用Vue全家桶和NodeJs的组合来实现（也有可能会用Django框架）。所以不管怎么说，先要把NodeJs的环境配置好。  
+
+## 配置教程
+
 1. 更新源仓库的packages:  
     ```bash
     sudo apt-get update
@@ -47,13 +51,15 @@ keywords: Ubuntu, NodeJs, npm, install
     sudo npm install -g nrm
     ```
 
-7. 查看npm源:
+## 更换源仓库
+
+1. 查看npm源:
     ```bash
     nrm ls
     ```
     ![img](https://github.com/SinestroEdmonce/SinestroEdmonce.github.io/raw/master/images/posts/npm_source.png)
 
-8. 切换npm源:
+2. 切换npm源:
     ```bash
     nrm use xxx     # xxx表示源的名称
     ```
