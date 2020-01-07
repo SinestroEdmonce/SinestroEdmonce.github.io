@@ -6,7 +6,7 @@ description: 在Ubuntu18.04上直接通过apt-get等相关原生指令安装npm�
 keywords: Ubuntu, NodeJs, npm, install
 ---
 
-下学期可能要接触全栈开发，打算用Vue全家桶和NodeJs的组合来实现（也有可能会用Django框架）。所以不管怎么说，先要把NodeJs的环境配置好。  
+2020Spring可能要接触全栈开发，打算用Vue全家桶和Node.js的组合来实现（也有可能会用Django框架）。所以不管怎么说，先要把Node.js的环境配置好。  
 
 ## 配置教程
 
