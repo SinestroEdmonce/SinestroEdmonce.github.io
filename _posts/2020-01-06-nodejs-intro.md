@@ -1,9 +1,9 @@
 ---
 layout: post
 title: Node.js基础概念的一些笔记
-categories: [Nodejs, Notes]
+categories: [Node.js, Notes]
 description: “Node.js是什么”相关的一些基础知识点笔记，关于Nodejs的基础概念的速记。
-keywords: Nodejs, Concepts
+keywords: Node.js, Concepts
 ---
 
 这篇笔记更像是一个对Node.js的基础概念的速写。简单回答了一些问题，例如“Node.js是什么”，“Node.js有哪些性质”，“Node.js能做什么”等等。这篇笔记实则是对Node.js的概览，宏观上理解Node.js的相关基础知识。
