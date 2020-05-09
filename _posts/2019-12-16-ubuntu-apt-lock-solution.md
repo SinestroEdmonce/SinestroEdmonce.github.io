@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Ubuntu18.04更新apt时出现lock问题的解决方法
-categories: [Ubuntu, apt-get]
+categories: [Ubuntu]
 description: Ubuntu18.04系统执行apt-get update命令时，有时会出现lock的情况，这种情况下需要对lock文件进行处理
 keywords: Ubuntu, apt-get, lock
 ---
