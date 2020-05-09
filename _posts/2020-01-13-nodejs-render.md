@@ -39,7 +39,7 @@ keywords: Front-end, Back-end, Render
     <html>
         <head></head>
         <body>
-            <h1>hello {{ name }}</h1>s
+            <h1>hello {{ name }}</h1>
         </body>
     </html>
     ```
