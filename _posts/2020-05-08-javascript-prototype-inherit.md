@@ -95,6 +95,11 @@ PrimaryStudent.prototype.getGrade = function () {
     return this.grade;
 };
 
+var xiaoming = new PrimaryStudent({
+    name: 'Xiaoming',
+    grade: 2
+});
+
 // 验证原型:
 xiaoming.__proto__ === PrimaryStudent.prototype; // true
 xiaoming.__proto__.__proto__ === Student.prototype; // true
