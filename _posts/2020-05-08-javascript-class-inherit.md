@@ -43,10 +43,11 @@ var xiaoming = new Student('Xiaoming');
 xiaoming.hello();
 ```
 
-class继承
+## class继承
 
-用class定义对象的另一个巨大的好处是继承更方便了。想一想我们从Student派生一个PrimaryStudent需要编写的代码量。现在，原型继承的中间对象，原型对象的构造函数等等都不需要考虑了，直接通过extends来实现：
+用`class`定义对象的另一个巨大的好处是继承更方便了，可以直接通过extends来实现：
 
+```javascript
 class PrimaryStudent extends Student {
     constructor(name, grade) {
         super(name); // 记得用super调用父类的构造方法!
@@ -57,14 +58,8 @@ class PrimaryStudent extends Student {
         alert('I am at grade ' + this.grade);
     }
 }
+```
 
-注意PrimaryStudent的定义也是class关键字实现的，而extends则表示原型链对象来自Student。子类的构造函数可能会与父类不太相同，例如，PrimaryStudent需要name和grade两个参数，并且需要通过super(name)来调用父类的构造函数，否则父类的name属性无法正常初始化。
+注意`PrimaryStudent`的定义也是`class`关键字实现的，而`extends`则表示原型链对象来自`Student`。子类的构造函数可能会与父类不太相同，例如，`PrimaryStudent`需要`name`和`grade`两个参数，并且需要通过`super(name)`来调用父类的构造函数，否则父类的`name`属性无法正常初始化。`Primarytudent`已经自动获得了父类`Student`的`hello`方法，我们又在子类中定义了新的`myGrade`方法。
 
-PrimaryStudent已经自动获得了父类Student的hello方法，我们又在子类中定义了新的myGrade方法。
-
-ES6引入的class和原有的JavaScript原型继承有什么区别呢？实际上它们没有任何区别，class的作用就是让JavaScript引擎去实现原来需要我们自己编写的原型链代码。简而言之，用class的好处就是极大地简化了原型链代码。
-
-你一定会问，class这么好用，能不能现在就用上？
-
-现在用还早了点，因为不是所有的主流浏览器都支持ES6的class。如果一定要现在就用上，就需要一个工具把class代码转换为传统的prototype代码，可以试试Babel这个工具。
-
+ES6引入的`class`和原有的Javascript原型继承有什么区别呢？实际上它们没有任何区别，`class`的作用就是让Javascript引擎去实现原来需要我们自己编写的原型链代码。简而言之，用`class`的好处就是极大地简化了原型链代码。
