@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 后端渲染和前端渲染的一些速记
-categories: [Back-end, Fron-end, Render]
+categories: [Back-end, Front-end]
 description: 简单介绍一下前后端渲染的不同与优劣。基础概念的一些速记。
 keywords: Front-end, Back-end, Render
 ---
