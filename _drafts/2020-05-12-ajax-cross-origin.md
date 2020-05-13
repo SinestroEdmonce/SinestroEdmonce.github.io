@@ -27,30 +27,28 @@ CORS是一个W3C标准，全称是“跨域资源共享”（Cross-origin resour
 关于CORS，可以参考：
 [跨域资源共享CORS详解(阮一峰)](http://www.ruanyifeng.com/blog/2016/04/cors.html)。另外，这里也整理了一个实现原理图(简化版):
 
-cors_mechanism.png
+![img](https://github.com/SinestroEdmonce/SinestroEdmonce.github.io/raw/master/images/posts/cors_mechanism.png)
 
-如何判断是否是简单请求?
+### 如何判断CORS是否为简单请求?
 
 浏览器将CORS请求分成两类：简单请求（simple request）和非简单请求（not-so-simple request）。只要同时满足以下两大条件，就属于简单请求。
 
-请求方法是以下三种方法之一：HEAD，GET，POST
-HTTP的头信息不超出以下几种字段：
-Accept
-Accept-Language
-Content-Language
-Last-Event-ID
-Content-Type(只限于三个值application/x-www-form-urlencoded、 multipart/form-data、text/plain)
+- 请求方法是以下三种方法之一：`HEAD`，`GET`，`POST`
+- HTTP的头信息不超出以下几种字段：
+
+    - Accept
+    - Accept-Language
+    - Content-Language
+    - Last-Event-ID
+    - Content-Type(只限于三个值application/x-www-form-urlencoded、 multipart/form-data、text/plain)
+
 凡是不同时满足上面两个条件，就属于非简单请求。
 
-AJAX跨域的表现
+### AJAX跨域的表现
 
-说实话，当初整理过一篇文章，然后作为了一个解决方案，但是后来发现仍然有很多人还是不会。无奈只能耗时又耗力的调试。然而就算是我来分析，也只会根据对应的表现来判断是否是跨域，因此这一点是很重要的。
+AJAX请求时，如果存在跨域现象，并且没有进行解决，会有如下表现：（注意，是AJAX请求，请不要说为什么http请求可以，而AJAX不行，因为AJAX是伴随着跨域的，所以仅仅是http请求状态为`OK`是不行的）
 
-AJAX请求时，如果存在跨域现象，并且没有进行解决，会有如下表现:(注意，是AJAX请求，请不要说为什么http请求可以，而AJAX不行，因为AJAX是伴随着跨域的，所以仅仅是http请求ok是不行的)
-
-注意:具体的后端跨域配置请看题纲位置。
-
-第一种现象:No 'Access-Control-Allow-Origin' header is present on the requested resource，并且The response had HTTP status code 404
+- 第一种现象：`No 'Access-Control-Allow-Origin' header is present on the requested resource`，并且`The response had HTTP status code 404`
 
 
 
