@@ -121,7 +121,8 @@ console.log('Server is running at port 8080...');
 此方案仅限主域相同，子域不同的跨域应用场景。实现原理：两个页面都通过js强制设置`document.domain`为基础主域，就实现了同域。
 
 - 父窗口：(`http://www.domain.com/a.html`)
-```html 
+
+```html
 <iframe id="iframe" src="http://child.domain.com/b.html"></iframe>
 <script>
     document.domain = 'domain.com';
@@ -130,6 +131,7 @@ console.log('Server is running at port 8080...');
 ```
 
 - 子窗口：(`http://child.domain.com/b.html`)
+
 ```html
 <script>
     document.domain = 'domain.com';
