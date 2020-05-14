@@ -1,9 +1,9 @@
 ---
 layout: post
-title: 详解vertical-align属性和失效的解决方法
-categories: [cate1, cate2]
-description: some word here
-keywords: keyword1, keyword2
+title: 详解vertical-align属性实现行级元素居中的方法
+categories: [CSS]
+description: 本文主要分析使用CSS中vertical-align属性，和使用它实现行级元素的垂直居中的一些方法。
+keywords: CSS, vertical-align
 ---
 
 本文讲解的是`line-height`和`vertical-align`。至于各种垂直居中的方法，网上包括掘金里已有不少文章介绍，本文仅讲解使用`vertical-align`属性进行对齐的方式。
