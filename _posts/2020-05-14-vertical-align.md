@@ -19,7 +19,7 @@ keywords: keyword1, keyword2
       <img src="https://github.com/SinestroEdmonce/SinestroEdmonce.github.io/raw/master/images/posts/line_height_baseline_intro.png">
   </div>
 
-  > 纠正：上图中的middle描述有错，正确应该为`baseline`往上二分之一`x-height`所在的位置，其中`x-height`指的是字母`x`的高度，关于`x-height`，具体可以查看后文参考中《字幕'x'在css世界中的角色和故事》
+  > 纠正：上图中的middle描述有错，正确应该为`baseline`往上二分之一`x-height`所在的位置，其中`x-height`指的是字母`x`的高度，关于`x-height`，具体可以查看后文**参考**中《字幕'x'在css世界中的角色和故事》
 
 - 四种内联盒子：在CSS中有四种内联盒子，分别是`containing box`，`inline boxes`，`line box`，`content area`。分别如下：
   - `containing box`：外层盒子模型，包含了其他的盒模型
@@ -143,7 +143,7 @@ keywords: keyword1, keyword2
 
 ## `line-height`与`vertical-align`的密切关系与应用
 
-一些`vertical-align`和`line-height`相互辅助来进行布局的方法详见下文参考中的文章《彻底搞定vertical-align垂直居中不起作用疑难杂症》，这里不再赘述。最后了解几个定义
+一些`vertical-align`和`line-height`相互辅助来进行布局的方法详见下文**参考**中的文章《彻底搞定vertical-align垂直居中不起作用疑难杂症》，这里不再赘述。最后了解几个定义
 
 - `inline-block`基线： 在CSS2可视化格式模型文档中，指出了`inline-block`的基线是正常流中最后一个`line box`的基线，但是，如果这个`line box`里面没有`inline boxes`或者其`overflow`属性值不是`visible`，那么其基线就是`margin bottom`的边缘。什么意思呢？我们用一张图片说明一下：
 
