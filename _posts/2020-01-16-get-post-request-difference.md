@@ -1,9 +1,9 @@
 ---
 layout: post
 title: Web服务中Get和Post请求的区别
-categories: [Web, Node.js]
-description: 在学Node.js过程中对Get和Post请求的异同产生了一些疑惑，索性查了查资料，把自己了解到的相关概念与知识整理了一下，做了个速记。
-keywords: Web, Node.js, Post, Get
+categories: [Web, Nodejs]
+description: 在学Nodejs过程中对Get和Post请求的异同产生了一些疑惑，索性查了查资料，把自己了解到的相关概念与知识整理了一下，做了个速记。
+keywords: Web, Nodejs, Post, Get
 ---
 
 ``Get``和``Post``请求还是有比较明显的不同的。在Web服务器设计和前后端交互中，需要比较熟悉地掌握这两个请求的区别，才能更加方便地进行接口设计和实现，下面记录了我自己了解和查阅资料知道的一些概念。

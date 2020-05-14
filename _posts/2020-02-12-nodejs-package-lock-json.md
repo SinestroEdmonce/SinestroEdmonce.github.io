@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Node.js中package-lock.json文件的作用
-categories: [Node.js, Notes]
+title: Nodejs中package-lock.json文件的作用
+categories: [Nodejs, Notes]
 description: 简要介绍一下package-lock.json文件在工程中的作用。
-keywords: Node.js, package-lock.json
+keywords: Nodejs, package-lock.json
 ---
 
 在创建node的工程的时候一般会出现``package.json``和``package-lock.json``两个文件，尤其是在安装第三方库的的时候一定会出现，这两个文件的文件名很相似，但是文件本身在功能上还是有一些区别和联系的。

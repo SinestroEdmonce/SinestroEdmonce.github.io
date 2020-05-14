@@ -1,9 +1,9 @@
 ---
 layout: post
 title: Ubuntu18.04安装NodeJs及npm相关包
-categories: [Ubuntu, Node.js]
+categories: [Ubuntu, Nodejs]
 description: 在Ubuntu18.04上直接通过apt-get等相关原生指令安装npm和Node.js的简明教程
-keywords: Ubuntu, Node.js, npm, install
+keywords: Ubuntu, Nodejs, npm, install
 ---
 
 2020Spring可能要接触全栈开发，打算用Vue全家桶和Node.js的组合来实现（也有可能会用Django框架）。所以不管怎么说，先要把Node.js的环境配置好。  

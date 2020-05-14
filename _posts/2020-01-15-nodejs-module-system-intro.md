@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Node.js模块系统浅探的一些笔记
-categories: [Node.js, Notes]
-description: 对Node.js模块系统再稍微详细的探究。对模块系统的用法和机制的简单速记。
-keywords: Node.js, Modulization
+title: Nodejs模块系统浅探的一些笔记
+categories: [Nodejs, Notes]
+description: 对Nodejs模块系统再稍微详细的探究。对模块系统的用法和机制的简单速记。
+keywords: Nodejs, Modulization
 ---
 
 这篇速记是对Node.js的模块系统浅层次的探究，不涉及到Node.js模块化和模块系统的底层实现以及模块通信机制。速记了一些个人认为比较常见的一些模块系统的语法和概念。

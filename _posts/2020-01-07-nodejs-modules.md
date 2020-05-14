@@ -1,9 +1,9 @@
 ---
 layout: post
 title: Nodejs核心模块与模块化的一些笔记
-categories: [Node.js, Notes]
-description: Node.js核心模块的大致介绍。Nodejs模块化基础的一些速记。
-keywords: Node.js, Modulization
+categories: [Nodejs, Notes]
+description: Nodejs核心模块的大致介绍。Nodejs模块化基础的一些速记。
+keywords: Nodejs, Modulization
 ---
 
 想要熟练掌握Node.js则必须熟悉Node为JavaScript提供的服务器层级的API。这些API绝大多数都被包装在一些具名的核心模块里。例如文件操作的``fs``核心模块，http服务构建的``http``模块，``path``路径操作模块，``os``操作系统信息模块等等……

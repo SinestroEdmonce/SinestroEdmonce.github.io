@@ -1,9 +1,9 @@
 ---
 layout: post
 title: Express中的静态资源服务
-categories: [Express, Node.js]
+categories: [Express, Nodejs]
 description: 简要介绍了Express框架中使用静态资源服务的方法。可以通过使用API来指定static资源的相对路径，方便URL（统一资源定位符）进行定位。
-keywords: Express, Node.js, static resources
+keywords: Express, Nodejs, static resources
 ---
 
 ``Express``中可以默认设置一些静态资源服务，这样方便统一资源定位符（url）做出比较简单的定位，既可以简化代码也可以精简url链中的信息内容。
