@@ -6,302 +6,432 @@ description: some word here
 keywords: keyword1, keyword2
 ---
 
-史上最全的AJAX之XMLHttpRequest方法和属性详解
+深入理解XMLHttpRequest
+一、XMLHttpRequest的发展历程
+Ajax技术的核心是XMLHttpRequest对象。我们使用XMLHttpRequest对象来发送一个Ajax请求。这是由微软首先引入的一个特性，其他浏览器提供商后来都提供了相同的实现。
 
-安卓程序员小黄
-0.101
-2017.02.05 20:48:58
-字数 2,089
-阅读 1,913
-转载请标明出处
+XMLHttpRequest已经得到广泛接受，后来W3C对它进行了标准化，提出了XMLHttpRequest标准。XMLHttpRequest标准又分为Level 1和Level 2。
 
-本文出自HCY的博客
+并非所有浏览器都完整地实现了XMLHttpRequest 2级规范，但所有浏览器都实现了它规定的部分内容。
 
-概述
-AJAX是“Asynchronous Javascript And XML”的缩写，中文译作“异步JavaScript和XML”。使用AJAX可以通过HTTP协议与服务器交互数据，可以在不重新加载整个网页的情况下，对网页的某部分进行更新。
-传统的网页如果需要更新内容，必须重新加载整个网页页面。此外，它也是实现前端与后端解耦的重要技术手段。
+XMLHttpRequest Level 1主要存在以下缺点：
 
-为了实现AJAX技术，早期微软的IE5、IE6浏览器内嵌了XMLHTTP组件，其它浏览器比如Opera、Mozila的早期版本则内嵌了XMLHttpRequest组件。XMLHTTP与XMLHttpRequest有很多相同的属性和方法，因此XMLHTTP也被一起叫做XMLHttpRequest，简称XHR。后来XHR被W3C组织标准化。各浏览器也逐渐按照W3C制定的标准来实现XHR，到目前为止，仍然有部分的属性和方法不被部分浏览器支持。下面的图片截取于 Can I Use网站，它描述了目前各浏览器对XHR的兼容情况。因此，在使用XHR开发时需要注意兼容性，不过笔者认为，老版本浏览器的占有量会越来越少，新版本的浏览器可能会更加严格的按照W3C制定的标准来实现XHR，兼容性问题就会被慢慢淡化，Jquery框架在2.2的版本在实例化XHR时就不考虑IE5、IE6的兼容性问题了。
+不能发送二进制文件（如图片、视频、音频等），只能发送纯文本数据。
+在发送和获取数据的过程中，无法实时获取进度信息，只能判断是否完成。
+受同源策略的限制，不能发送跨域请求。
+Level 2对Level 1进行了改进，XMLHttpRequest Level 2中新增了以下功能：
 
-各浏览器对XMLHttpRequest的兼容情况各浏览器对XMLHttpRequest的兼容情况
-XHR实例的创建
-为了实现兼容IE5、IE6浏览器版本，所以可以用下面的代码创建XHR实例。
+在服务端允许的情况下，可以发送跨域请求。
+支持发送和接收二进制数据。
+新增formData对象，支持发送表单数据。
+发送和获取数据时，可以获取进度信息。
+可以设置请求的超时时间。
+下面的一行代码就可以创建XMLHttpRequest对象。
 
-var xhr;
-if (window.XMLHttpRequest)
-{
-    //  IE7+, Firefox, Chrome, Opera, Safari 浏览器执行代码
-    xhr=new XMLHttpRequest();
+const xhr = new XMLHttpRequest()
+复制代码
+兼容性查询：caniuse.com/#search=XML…
+
+二、XMLHttpRequest对象发送请求相关API
+请求头相关
+Accept：客户端可以处理的内容类型。比如：Accept: */*。
+Accept-Charset：客户端可以处理的字符集类型。比如：Accept-Charset: utf8。
+Accept-Encoding：客户端可以处理的压缩编码。比如：Accept-Encoding: gzip, deflate, br。
+Accept-Language：客户端当前设置的语言。比如：Accept-Language: zh-CN,zh;q=0.9,en;q=0.8。
+Connection：客服端与服务器之间连接的类型。比如：Connection: keep-alive。
+Cookie：当前页面设置的任何Cookie。
+Host：发出请求页面所在的域。
+Referer：表示当前请求页面的来源页面的地址，即当前页面是通过此来源页面里的链接进入的。
+User-Agent：客户端的用户代理字符串。一般包含浏览器、浏览器内核和操作系统的版本型号信息。
+Content-Type：客户端告诉服务器实际发送的数据类型。比如：Content-Type: application/x-www-form-urlencoded。
+更多参考：developer.mozilla.org/zh-CN/docs/…
+
+open()方法
+open()方法用于初始化一个请求。
+
+open()方法接收三个参数：
+
+第一个参数 method：要发送的请求的类型。比如GET、POST、PUT、DELETE等。
+第二个参数 url：请求的URL。
+第三个参数 async：是否异步发送请求的布尔值。true为异步发送请求。
+const xhr = new XMLHttpRequest()
+xhr.open('get', '/userInfo', true)
+复制代码
+调用open()方法并不会真正发送请求，而只是启动一个请求以备发送。
+
+send()方法
+send()方法用于发送HTTP请求。
+
+send()方法接收一个参数：
+
+第一个参数data：作为请求主体发送的数据。如果不需要通过请求主体发送数据，则必须传入null。该参数可以接收字符串、FormData、Blob、ArrayBuffer等类型。
+const xhr = new XMLHttpRequest()
+xhr.send(null)
+复制代码
+setRequestHeader()方法
+setRequestHeader()方法可以设置自定义的请求头部信息。
+
+setRequestHeader()方法接收二个参数：
+
+第一个参数 header：头部字段的名称。
+第二个参数 value：头部字段的值。
+要成功发送请求头部信息，此方法必须在open()和send()之间调用。
+
+const xhr = new XMLHttpRequest()
+xhr.open('get', '/server', true)
+xhr.setRequestHeader('MyHeader', 'MyValue')
+xmlhttp.send()
+复制代码
+readyState属性和onreadystatechange事件
+readyState属性表示请求/响应过程的当前活动阶段。这个属性的值如下：
+
+0（UNSENT）未初始化。尚未调用open()方法。
+1（OPENED）启动。已经调用open()方法，但没有调用send()方法。
+2（HEADERS_RECEIVED）发送。已经调用send()方法，但尚未接收到响应。
+3（LOADING）接收。已经接收到部分响应数据。
+4（DONE）完成。已经接收到全部响应数据。
+只要readyState属性的值发生变化，都会触发一次onreadystatechange事件。利用这个事件来检测每次状态变化后readyState的值。一般情况下只对readyState值为4的阶段做处理，这时所有数据都已经就绪。
+
+const xhr = new XMLHttpRequest()
+xhr.open('get', '/server', true)
+xhr.onreadystatechange = function () {
+  if(xhr.readyState !== 4) {
+    return  
+  }
+  if(xhr.status >= 200 && xhr.status < 300) {
+    console.log(xhr.responseText)
+  }
 }
-else
-{
-    // IE6, IE5 浏览器执行代码
-    xhr=new ActiveXObject("Microsoft.XMLHTTP");
+xhr.send(null)
+复制代码
+timeout属性和ontimeout事件
+timeout属性表示请求在等待响应多少毫秒之后就终止。如果在规定的时间内浏览器还没有接收到响应，就会触发ontimeout事件处理程序。
+
+const xhr = new XMLHttpRequest()
+xhr.open('get', '/server', true)
+//将超时设置为3秒钟
+xhr.timeout = 3000 
+// 请求超时后请求自动终止，会调用 ontimeout 事件处理程序
+xhr.ontimeout = function(){
+    console.log('请求超时了')
 }
-XHR请求
-XHR可以通过HTTP协议与服务器交换数据,要发送HTTP请求要使用到下面这些方法和属性：
+xhr.send(null)
+复制代码
+overrideMimeType()方法
+overrideMimeType()方法能够重写服务器返回的MIME类型，从而让浏览器进行不一样的处理。
 
-open方法
-open方法用于创建HTTP请求，但是请求并未发送，其定义如下：
+假如服务器返回的数据类型是text/xml，由于种种原因浏览器解析不成功报错，这时就拿不到数据。为了拿到原始数据，我们可以把MIME类型改成text/plain，这样浏览器就不会去自动解析，从而我们就可以拿到原始文本了。
 
-open(method, url [, async = true [, username = null [, password = null]]])
-参数method定义请求的类型，如GET、POST方法等等，大小写不敏感
-参数url定义请求的URL地址
-参数async定义是否异步处理请求，true(异步)或者false(同步)，默认为true
-参数username定义用户名，不常用，默认为null
-参数password定义密码，不常用，默认为null
-setRequestHeader方法
-setRequestHeader方法用于向请求添加HTTP头，其定义如下:
+const xhr = new XMLHttpRequest()
+xhr.open('get', '/server', true)
+xhr.overrideMimeType('text/plain')
+xhr.send(null)
+复制代码
+responseType属性
+responseType属性是一个字符串，表示服务器返回数据的类型。使用xhr.response属性来接收。
 
-setRequestHeader(name, value)
-参数name定义HTTP请求头部的名称
-参数value定义HTTP请求头部的值
-注意:
+这个属性是可写的，可以在调用open()方法之后，send()方法之前设置这个属性的值，告诉服务器返回指定类型的数据。如果responseType设为空字符串，等同于默认值text。
 
-setRequestHeader方法必须在open方法调用之后、send方法之前调用，否则会出现异常
-setRequestHeader方法可以连续调用多次，如果已经存在同名的HTTP头时，最终结果是追加而不是覆盖
-//例子1
-client.setRequestHeader('X-Test', 'one');
-client.setRequestHeader('X-Test', 'two');
-//最后的结果为X-Test: one, two
+responseType属性可以设置的格式类型如下：
 
-//例子2
-client.setRequestHeader('X-Test', 'one');
-client.setRequestHeader('X-Test', 'one');
-//最后的结果为X-Test: one, one
-timeout属性
-timeout属性用于设置HTTP请求的超时时间，单位毫秒。当发生超时时，会触发ontimeout事件。在IE中，超时属性只能在调用 open() 方法之后且在调用 send() 方法之前设置。
+responseType属性的值	response属性的数据类型	说明
+""	String字符串	默认值，等同于text(在不设置responseType时)
+"text"	String字符串	服务器返回文本数据
+"document"	Document对象	希望返回XML格式数据时使用
+"json"	javaScript对象	IE10/IE11不支持
+"blob"	Blob对象	服务器返回二进制对象
+"arrayBuffer"	ArrayBuffer对象	服务器返回二进制数组
+当将responseType设置为一个特定的类型时，你需要确保服务器所返回的类型和你所设置的返回值类型是兼容的。那么如果两者类型不兼容，服务器返回的数据就会变成null，即使服务器返回了数据。
+
+给一个同步请求设置responseType会抛出一个InvalidAccessError的异常。
+
+// 获取一张图片代码示例
+const xhr = new XMLHttpRequest()
+xhr.open('get', '/server/image.png', true)
+xhr.responseType = 'blob'
+xhr.onload = function(e) {
+  if (xhr.status >= 200 && xhr.status < 300) {
+    const blob = this.response
+    // ...
+  }
+}
+xhr.send(null)
+复制代码
+withCredentials属性
+withCredentials属性是一个布尔值，表示跨域请求时是否协带凭据信息（cookie、HTTP认证及客户端SSL证明等）。默认为false。
+
+如果需要跨域Ajax请求发送Cookie，需要withCredentials属性设为true。如果在同域下配置xhr.withCredentials，无论配置true还是false，效果都会相同。
+
+const xhr = new XMLHttpRequest()
+xhr.open('get', '/server', true)
+xhr.withCredentials = true
+xhr.send(null)
+复制代码
+当配置了withCredentials为true时，必须在后端增加response头信息Access-Control-Allow-Origin，且必须指定域名，而不能指定为*。还要添加Access-Control-Allow-Credentials这个头信息为true。
+
+response.addHeader("Access-Control-Allow-Origin", "http://example.com")
+response.addHeader("Access-Control-Allow-Credentials", "true")
+复制代码
+abort()方法和onabort事件
+在接收到响应之前调用abort()方法用来取消异步请求。当一个请求被终止后，它的readyState属性将被置为0。在终止请求之后，还应该对XMLHttpRequeat对象进行解引用操作。
+
+当调用abort()后，会触发onabort事件。
+
+const xhr = new XMLHttpRequest()
+xhr.open('get', '/server', true)
+xmlhttp.onabort = function () {
+  console.log('请求被中止')
+}
+xmlhttp.send()
+// 将会调用我们上面定义的 onabort 回调函数
+xmlhttp.abort()
+复制代码
+GET请求
+将查询字符串参数追加到URL的末尾，将信息发送给服务器。
+
+GET参数的编码方式是无法人为干涉的，这导致了不同浏览器有不同的编码方式，因此最稳妥的方案是人工预编码，人工解码，从而禁止浏览器编码的干涉。
+
+const xhr = new XMLHttpRequest()
+// 使用encodeURIComponent()进行编码
+const tempParam = encodeURIComponent('age')
+const tempValue = encodeURIComponent('20')
+xhr.open('get', '/server?tempParam=tempValue&money=100', true)
+复制代码
+POST请求
+POST请求把数据作为请求的主体（请求的body）提交。下面是四种常见的POST请求提交数据方式。
+
+application/x-www-form-urlencoded
+浏览器的原生<form>表单，如果不设置enctype属性，那么最终就会以application/x-www-form-urlencoded方式提交数据。
+
+multipart/form-data
+表单上传文件时，必须让<form>表单的enctype等于multipart/form-data。
+
+application/json
+当发送Ajax请求时，把application/json作为请求头，用来告诉服务端消息主体是序列化后的JSON字符串。
+
+text/xml
+使用HTTP作为传输协议，XML作为编码方式的远程调用规范。
+
+使用XMLHttpRequest模拟表单提交
+将Content-Type头部信息设置为application/x-www-form-urlencoded。可以使用XMLHttpRequest对象来模仿表单提交。
+
+const xhr = new XMLHttpRequest()
+xhr.open('post', '/server', true)
+xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded')
+const form = document.getElementById('myForm') 
+// serialize()为表单序列化方法
+xhr.send(serialize(form))
+复制代码
+也可以使用XMLHttpRequest level 2的FormData来序列化表单数据。
+
+const xhr = new XMLHttpRequest()
+xhr.open('post', '/server', true)
+const form = document.getElementById('myForm')
+const formData = new FormData(form)
+formData.append("id", "123456")
+xhr.send(formData)
+复制代码
+使用FormData不必明确地在XMLHttpRequest对象上设置请求头部。XMLHttpRequest对象能够识别传入的数据类型是FormData的实例，并配置适当的头部信息。
+
+XMLHttpRequest进度事件相关API
+onloadstart
+在XMLHttpRequest对象开始传送数据时被触发，也就是调用send()方法（HTTP 请求发出）的时候。
+
+xhr.onloadstart = function () {
+  console.log('开始发出请求...')
+}
+复制代码
+onprogress
+在接收响应期间持续不断地触发。
+
+onprogress事件处理程序会接收到一个event对象，它的target属性是XMLHttpRequest对象，并且event包含着三个额外的属性:loaded、total和lengthComputable。
+
+event.loaded：已传输的数据量（已经接收的字节数）。
+event.total：总共的数据量（根据Content-Length响应头部确定的预期字节数）。
+event.lengthComputable：进度信息是否可用的布尔值。
+有了这些信息，就可以创建一个Ajax请求进度条了。
+
+const xhr = new XMLHttpRequest()
+xhr.onprogress = function (event) {
+    if (!event.lengthComputable) {
+        return console.log('无法计算进展')
+    }
+    const percentComplete = event.loaded / event.total * 100
+    console.log(`进度百分比：${percentComplete}%`)
+}
+xhr.open('post', '/server', true)
+xhr.send(null)
+复制代码
+onerror
+在请求发生错误时触发。只有发生了网络层级别的异常才会触发此事件，对于应用层级别的异常，比如响应返回的statusCode是4xx时，并不属于NetWork Error，所以不会触发onerror事件，而是会触发onload事件。
+
+xhr.onerror = function(e) {
+ console.log('数据接收出错')
+}
+复制代码
+onabort
+调用abort()方法而终止请求时触发。
+
+onload
+当请求成功，接收到完整的响应数据时触发。
+
+可以使用onload事件可以用来替代readystatechange事件。因为响应接收完毕后将触发onload事件，因此也就没有必要去检查readyState属性了。只要浏览器接收到服务器的响应，不管其状态如何，都会触发load事件。
+
+const xhr = new XMLHttpRequest()
+xhr.onload = function onload() {
+  console.log('数据接收完毕')
+  if(xhr.status >= 200 && xhr.status < 300) {
+    console.log(xhr.responseText)
+  }
+}
+xhr.open('post', '/server', true)
+
+xhr.send(formData)
+复制代码
+为确保正常执行，必须在调用open()方法之前添加onprogress事件处理程序。
+
+onloadend
+在请求结束（包括请求成功和请求失败），或者触发error、abort或load事件后触发。
+
+xhr.onloadend = function(e) {
+  console.log('请求结束，状态未知')
+}
+复制代码
+每个请求都从触发loadstart事件开始，接下来是一或多个progress事件，然后触发error、 abort或load事件中的一个，最后以触发loadend事件结束。
 
 upload属性
-upload用于在数据传输到服务器时收集一些传输信息，比如上传了多少字节，总共多少字节等，其里面还包含了一些事件回调。
+XMLHttpRequest不仅可以发送请求，还可以发送文件，就是Ajax文件上传。
 
-send方法
-send方法用于发送open方法创建的HTTP请求，其定义如下：
+发送文件以后，通过XMLHttpRequest.upload属性可以得到一个XMLHttpRequestUpload对象。通过这个对象，可以得知上传的进展。实现方案就是监听这个对象的各种事件：onloadstart、onprogress、onabort、onerror、onload、ontimeout、onloadend。
 
-send([body = null])
-参数body定义HTTP请求的数据，当HTTP请求的方法为GET、HEAD时，该参数被忽略。body的类型可以为ArrayBuffer(二进制缓冲数组)、Blob(二进制大对象)、Document(类似XML格式的数据)、DOMString（字符串）、FormData(表单)。
-上面几种数据类型的介绍可参考:
+当文件上传时，对upload属性指定progress事件的监听函数，可获得上传的进度。
 
-ArrayBuffer、Blob、Document、DOMString、FormData类型的数据介绍
-
-abort方法
-当请求发送后如果想终止这个请求，则可以调用abort方法，其定义如下：
-
-abort()
-XHR事件回调
-当XHR发送异步请求后，我们无法知道请求是否发生了异常、请求何时到达服务器、服务器何时返回响应数据。XHR为我们提供了很多的事件回调，用来通知我们请求及响应状态的改变。下面的接口定义语言描述了跟XHR相关的事件接口定义。
-
-interface XMLHttpRequestEventTarget : EventTarget {
-  // event handlers
-  attribute EventHandler onloadstart;
-  attribute EventHandler onprogress;
-  attribute EventHandler onabort;
-  attribute EventHandler onerror;
-  attribute EventHandler onload;
-  attribute EventHandler ontimeout;
-  attribute EventHandler onloadend;
-};
-
-interface XMLHttpRequestUpload : XMLHttpRequestEventTarget {
-};
-
-interface XMLHttpRequest : XMLHttpRequestEventTarget {
-  // event handler
-  attribute EventHandler onreadystatechange;
-  // states
-  //XHR的状态定义
-  const unsigned short UNSENT = 0;
-  const unsigned short OPENED = 1;
-  const unsigned short HEADERS_RECEIVED = 2;
-  const unsigned short LOADING = 3;
-  const unsigned short DONE = 4;
-  //用于描述XHR的状态
-  readonly attribute unsigned short readyState;
-  // request
-  [SameObject] readonly attribute XMLHttpRequestUpload upload;
-};
-readyState属性用于描述XHR的状态，它有下面五种状态：
-值	状态	描述
-0	UNSENT	最初始状态，还未调用open方法
-1	OPENED	已经调用了open方法
-2	HEADERS_RECEIVED	已经调用了send方法，响应的HTTP头部和状态可以获取
-3	LOADING	正在下载数据，下载的数据还不完整
-4	DONE	数据下载完成
-onreadystatechange属性可以指定一个回调函数，当XHR的状态（即readyState）发生改变时就会调用该函数，可以在这个回调函数中判断请求是否成功。
-   xhr.onreadystatechange = function() {
-        if (xhr.readyState == 4) {
-            //当XHR的状态为4时判断请求成功与否，然后处理响应的数据，虽然当XHR的状态为2或者3时可以获取到响应状态，但是此时的数据还未下载完全，不能处理响应数据
-            if (xhr.status == 200) {
-                //请求成功，处理响应数据
-            } else {
-                //请求失败
-            }
+const xhr = new XMLHttpRequest()
+if (xhr.upload) {
+    xhr.upload.onprogress = function progress(e) {
+        if (e.total > 0) {
+            e.percent = e.loaded / e.total * 100
         }
     }
-upload属性代表上传数据的过程，它是XMLHttpRequestUpload的实例，XMLHttpRequestUpload继承XMLHttpRequestEventTarget接口，XMLHttpRequestEventTarget有7个回调方法，在数据上传的过程中会调用相应的方法。XHR也继承XMLHttpRequestEventTarget接口，因此它也拥有这些回调方法，但是它的回调方法大多都是从服务器下载响应数据的过程中触发的。
-事件触发的时机
-upload的回调方法会在数据上传的过程中触发，XHR的回调方法大多在响应数据下载的过程中触发，具体的触发时机见下表：
+}
+复制代码
+三、XMLHttpRequest对象接收响应相关API
+在接收到响应后，第一步是检查status属性。以确定响应已经成功返回。将HTTP状态代码为200作为成功的标志。状态代码为304表示请求的资源并没有被修改，可以直接使用浏览器中缓存的版本，也被认为是有效的。
 
-事件	触发时机
-onreadystatechange	当readyState的值改变时触发，除了当它从非0变成0时
-onloadstart	当调用send方法时会触发xhr.onloadstart,然后会触发xhr.upload.onloadstart，代表开始上传数据
-onprogress	上传数据过程中会触发xhr.upload.onprogress，下载数据过程中会触发xhr.onprogress，onprogress每50ms会触发一次
-onabort	调用abort方法后会触发
-onerror	当发生网络异常的时候会触发，如果上传数据的过程还未结束，此时会先触发xhr.upload.onerror，然后再触发xhr.onerror；如果上传数据的过程已经结束，此时只会触发xhr.onerror
-onload	上传数据成功，会触发xhr.upload.onload；下载数据成功会触发xhr.onload
-ontimeout	当服务端响应的时间超过指定的timeout时间时，会触发此事件
-onloadend	上传数据完成（成功或者失败）时会触发xhr.upload.onloadend；下载数据完成（成功或失败）会触发xhr.onloadend
-事件触发的顺序
-通过下面的代码验证，可以得出事件触发的顺序。
+响应头相关
+Content-Type：服务器告诉客户端响应内容的类型和采用字符编码。比如：Content-Type: text/html; charset=utf-8。
+Content-Length：服务器告诉客户端响应实体的大小。比如：Content-Length: 8368。
+Content-Encoding：服务器告诉客户端返回的的压缩编码格式。比如：Content-Encoding: gzip, deflate, br。
+更多参考：developer.mozilla.org/zh-CN/docs/…
 
- var xhr = new XMLHttpRequest();
-    xhr.timeout = 1;
-    //xhr events
-    xhr.onreadystatechange = function() {
-        console.log("onreadystatechange(),readyState=" + xhr.readyState);
-    }
-    xhr.onloadstart = function(event) {
-        console.log("onloadstart()");
-    }
-    xhr.onprogress = function(event) {
-        console.log("onprogress()");
-    }
-    xhr.onabort = function(event) {
-        console.log("onabort()");
-    }
-    xhr.onerror = function(event) {
-        console.log("onerror()");
-    }
-    xhr.onload = function(event) {
-        console.log("onload()");
-    }
-    xhr.ontimeout = function(event) {
-        console.log("ontimeout()");
-    }
-    xhr.onloadend = function(event) {
-            console.log("onloadend()");
-        }
-        //upload events
-    xhr.upload.onloadstart = function(event) {
-        console.log("upload.onloadstart()");
-    }
-    xhr.upload.onprogress = function(event) {
-        console.log("upload.onprogress()");
-    }
-    xhr.upload.onabort = function(event) {
-        console.log("upload.onabort()");
-    }
-    xhr.upload.onerror = function(event) {
-        console.log("upload.onerror()");
-    }
-    xhr.upload.onload = function(event) {
-        console.log("upload.onload()");
-    }
-    xhr.upload.ontimeout = function(event) {
-        console.log("upload.ontimeout()");
-    }
-    xhr.upload.onloadend = function(event) {
-        console.log("upload.onloadend()");
-    }
-    try {
-        xhr.open("POST", "http://localhost:8080/Server/test", true);
-        xhr.send("hello");
-    } catch (e) {
-        alert(e.toString());
-    }
-打印的顺序如下：
+status属性
+status属性返回一个整数，表示服务器回应的HTTP状态码。如果服务器没有返回状态码，那么这个属性默认是200。请求发出之前，该属性为0。该属性只读。
 
-//调用了open方法
-onreadystatechange(),readyState=1
-//调用了send方法
-onloadstart()
-//上传数据过程中的事件回调
-upload.onloadstart()//开始上传请求数据
-upload.onprogress()//正在上传请求数据
-upload.onload()//成功上传请求数据
-upload.onloadend()//完成上传请求数据
-//下载响应数据过程中的事件回调
-onreadystatechange(),readyState=2//已经获取到响应头部和响应状态码
-onreadystatechange(),readyState=3//正在下载响应数据，改变状态
-onprogress()//正在下载响应数据
-onreadystatechange(),readyState=4//响应数据下载完成，改变状态
-onload()//成功下载响应数据
-onloadend()//完成下载响应数据
-事件回调方法的参数
-XMLHttpRequestEventTarget里面的回调方法的参数类型为ProgressEvent，ProgressEvent的定义如下：
+if (xhr.readyState === 4) {
+  if (xhr.status >= 200 && xhr.status < 300) {
+    // 处理服务器的返回数据
+  }
+}
+复制代码
+statusText属性
+statusText属性返回一个字符串，表示服务器发送的状态说明。比如OK和Not Found。在请求发送之前，该属性的值是空字符串。如果服务器没有返回状态提示，该属性的值默认为OK。该属性为只读属性。
 
-interface ProgressEvent : Event {
-  readonly attribute boolean lengthComputable;//数据长度是否可计算的
-  readonly attribute unsigned long long loaded;//已经下载或者上传了多少字节
-  readonly attribute unsigned long long total;//需要下载或者上传的总字节数
-};
-所以在onprogress方法回调中，可以通过loaded和total这两个属性来实现上传或者下载的进度条功能。
+要通过检测status属性来决定下一步的操作，不要依赖statusText，因为statusText在跨浏览器使用时不太可靠。
 
-事件回调方法的添加方式
-一种方式是直接为它指定函数的引用，如下方式：
-    xhr.onloadstart = function(event) {
-        console.log("onloadstart()");
+response属性
+response属性表示服务器返回的数据。它可以是任何数据类型，比如字符串、对象、二进制对象等等，具体的类型由XMLHttpRequest.responseType属性决定。该属性只读。
+
+如果本次请求没有成功或者数据不完整，该属性等于null。
+
+const xhr = new XMLHttpRequest()
+xhr.onreadystatechange = function () {
+  if (xhr.readyState === 4) {
+    console.log(xhr.response)
+  }
+}
+复制代码
+responseText属性
+responseText属性返回从服务器接收到的字符串，该属性为只读。
+
+if (xhr.readyState === 4) {
+  if (xhr.status >= 200 && xhr.status < 300) {
+    // 处理服务器的返回数据
+    console.log(xhr.responseText)
+  }
+}
+复制代码
+responseXML属性
+如果响应的内容类型是"text/xml"或"application/xml"，这个属性中将保存包含着响应数据的HTML或XML文档对象。该属性是只读属性。
+
+无论内容类型是什么，响应主体的内容都会保存到responseText属性中。而对于非XML数据而言，responseXML属性的值将为null。
+
+responseURL属性
+responseURL属性是字符串，表示发送数据的服务器的网址。如果URL为空则返回空字符串。如果URL有锚点，则位于URL#后面的内容会被删除。如果服务器端发生跳转，这个属性返回最后实际返回数据的网址。
+
+const xhr = new XMLHttpRequest()
+xhr.open('GET', 'http://example.com/test', true)
+xhr.onload = function () {
+  // 返回 http://example.com/test
+  console.log(xhr.responseURL)
+}
+xhr.send(null)
+复制代码
+getResponseHeader()方法
+getResponseHeader()方法返回HTTP头信息指定字段的值，如果还没有收到服务器的响应或者指定字段不存在，返回null。该方法的参数不区分大小写。
+
+const xhr = new XMLHttpRequest()
+xhr.onload = function onload() {
+   console.log(xhr.getResponseHeader('Content-Type'))
+}
+xhr.open('post', '/server', true)
+xhr.send(null)
+复制代码
+如果有多个字段同名，它们的值会被连接为一个字符串，每个字段之间使用逗号+空格分隔。
+
+getAllResponseHeaders()方法
+getAllResponseHeaders()方法返回一个字符串，表示服务器发来的所有HTTP头信息。格式为字符串，每个头信息之间使用CRLF分隔（回车+换行），如果没有收到服务器回应，该属性为null。如果发生网络错误，该属性为空字符串。
+
+const xhr = new XMLHttpRequest()
+xhr.onload = function onload() {
+ const responseHeaders = 'getAllResponseHeaders' in xhr ? xhr.getResponseHeaders() : null
+}
+xhr.open('post', '/server', true)
+xhr.send(null)
+复制代码
+上面代码用于获取服务器返回的所有头信息。返回值可能是下面这样的字符串。
+
+content-encoding: gzip\r\n
+content-length: 2020\r\n
+content-type: text/html; charset=utf-8\r\n
+复制代码
+需要对这个字符串进行处理才能正确使用。
+
+const str = 'date: Fri, 08 Dec 2017 21:04:30 GMT\r\n'
+  + 'content-encoding: gzip\r\n'
+
+function trim(str) {
+  return str.replace(/^\s*/, '').replace(/\s*$/, '')
+}
+function parseHeaders(headers) {
+  if (!headers) {
+    return {}
+  }
+  const parsed = {}
+  let key, val, i
+  const arr = headers.split(/[\r\n]+/)
+  arr.forEach((line) => {
+    i = line.indexOf(':')
+    key = trim(line.substr(0, i)).toLowerCase()
+    val = trim(line.substr(i + 1))
+    if (key) {
+      parsed[key] = parsed[key] ? parsed[key] + ', ' + val : val
     }
-从上面的定义中可以看出，事件接口都继承自EventTarget，EventTarget的定义如下，其中有addEventListener方法，第一个参数时事件名称，没有“on”前缀，第二个参数时回调方法，其它参数为可选。
-interface EventTarget {
-  void addEventListener(DOMString type, EventListener? callback, optional (AddEventListenerOptions or boolean) options);
-  void removeEventListener(DOMString type, EventListener? callback, optional (EventListenerOptions or boolean) options);
-  boolean dispatchEvent(Event event);
-};
-因此下面的代码实现的效果与方式一相同
+  })
+  return parsed
+}
+//{date: "Fri, 08 Dec 2017 21:04:30 GMT", content-encoding: "gzip"}
+console.log(parseHeaders(str))
 
-    xhr.addEventListener("loadstart", function(event) {
-        console.log("loadstart()");
-    });
-XHR响应
-了解了XHR的请求、XHR的事件回调之后，就剩下处理XHR响应的工作了，比如解析数据等等，要处理响应，需要了解下面的方法和属性。
+## 参考
 
-getResponseHeader方法
-getResponseHeader方法可以获取HTTP响应头指定键值的数据，其定义如下：
-
-getResponseHeader(ByteString name);
-参数name为HTTP响应头部的键值
-getAllResponseHeaders方法
-getAllResponseHeaders方法可以获取所有的HTTP响应头的数据，其定义如下：
-
-getAllResponseHeaders()
-status和statusText属性
-status属性表示HTTP响应状态码，即200、404等；statusText属性表示HTTP响应状态的描述文本，即OK、Not Found等。
-
-responseType、response、responseText、responseXML属性
-可以在发送请求之前设置responseType，用于指定返回的响应数据的类型，responseType的类型有以下几种：
-
-类型	描述
-empty string	空字符串，这是默认值
-arraybuffer	二进制缓冲数组
-blob	二进制大对象
-document	文档类型
-json	JSON类型
-text	文本类型
-处理响应数据时，需要根据responseType来判断返回的数据类型。当responseType为text或者empty string类型时可以使用responseText属性，为其它类型时调用responseText会发生异常；当responseType为document或者empty responseXML属性，为其它类型时调用responseXML会发生异常；当responseType不是empty string、text、document类型时，需要转换成具体的类型进行解析。
-
-处理响应数据的时机
-方式一：
-    xhr.onreadystatechange = function() {
-            if (xhr.readyState === 4) {
-                if (xhr.status === 200) {
-                    //处理数据
-                } else {
-                    //其它操作
-                }
-            }
-        }
-方式二：
-    xhr.onload = function(event) {
-        if (xhr.status === 200) {
-            //处理数据
-        } else {
-            //其它操作
-        }
-    }
-通过XHR回调事件的触发时机我们可以知道，onreadystatechange回调会触发多次，因此方式二更优。
-
-参考资料
-原汁原味的官方规范，W3C制定的XHR规范
-发送数据的类型详解，DOMString、Document、FormData、Blob、File、ArrayBuffer数据类型介绍
-辅助阅读的规范文档，MDN的Web api
+[深入理解XMLHttpRequest](https://juejin.im/post/5e05c6c8e51d4558206031ca)
