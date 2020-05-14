@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 跨域错误和AJAX跨域的解决方案
-categories: [Cross-origin， Javascript， AJAX]
+categories: [Cross-origin, Javascript, AJAX]
 description: 这篇文章简单介绍了在使用AJAX跨域时几种常见的跨域错误（简单介绍分析了浏览器控制台显示的跨域错误相关的信息），并且以AJAX跨域为例，介绍一种跨域的解决方案
 keywords: Cross-origin, Javascript, AJAX
 ---
