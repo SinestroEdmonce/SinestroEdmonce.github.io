@@ -4,12 +4,14 @@
       - C++/C
       - Python
       - Swift
-      - NodeJs
+      - Javascript
+      - HTML
+      - CSS
+      - Nodejs
 
 - name: Mobile Developer Keywords
   keywords:
       - iOS
-      - Android
 
 - name: Artificial Intelligence Keywords
   keywords:

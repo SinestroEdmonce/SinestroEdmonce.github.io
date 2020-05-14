@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Ubuntu18.04安装NodeJs及npm相关包
+title: Ubuntu18.04安装Nodejs及npm相关包
 categories: [Ubuntu, Nodejs]
 description: 在Ubuntu18.04上直接通过apt-get等相关原生指令安装npm和Node.js的简明教程
 keywords: Ubuntu, Nodejs, npm, install
