@@ -6,6 +6,8 @@ description: AJAX技术的核心是XMLHttpRequest对象。我们使用XMLHttpReq
 keywords: Web, AJAX, XMLHttpRequest
 ---
 
+AJAX技术的核心是XMLHttpRequest对象。我们使用XMLHttpRequest对象来发送一个AJAX请求。本文旨在详细介绍XMLHttpRequest对象和其相关的函数方法。
+
 ## `XMLHttpRequest`的发展历程
 
 这是由微软首先引入的一个特性，其他浏览器提供商后来都提供了相同的实现。`XMLHttpRequest`已经得到广泛接受，后来W3C对它进行了标准化，提出了`XMLHttpRequest`标准。`XMLHttpRequest`标准又分为`Level 1`和`Level 2`。并非所有浏览器都完整地实现了`XMLHttpRequest Level 2`级规范，但所有浏览器都实现了它规定的部分内容。
