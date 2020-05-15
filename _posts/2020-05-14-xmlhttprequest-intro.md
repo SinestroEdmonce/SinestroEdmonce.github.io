@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 深入理解XMLHttpRequest
-categories: [Web, AJAX]
+categories: [Web, AJAX, Javascript]
 description: AJAX技术的核心是XMLHttpRequest对象。我们使用XMLHttpRequest对象来发送一个AJAX请求。本文旨在详细介绍XMLHttpRequest对象和其相关的函数方法。
 keywords: Web, AJAX, XMLHttpRequest
 ---
