@@ -169,10 +169,10 @@ const path = require('path');        // node内置path模块，该模块主要�
 
 const config = {
     mode: 'development',        // webpack打包的模式，上述命令里有介绍，也可以在本配置中配置
-    entry: {    // js的入口文件，支持多入口 注释①
+    entry: {    // js的入口文件，支持多入口
         main: path.resolve(__dirname,'../src/index.js')
     },
-    output: {   // js打包压缩后的出口文件，多入口时对应的配置应做相对变化 注释②
+    output: {   // js打包压缩后的出口文件，多入口时对应的配置应做相对变化
         path: path.resolve(__dirname,'../dist'),
         filename:'bundle.js'
     },
@@ -180,7 +180,7 @@ const config = {
         rules: [] // 配置loder使用的规则、作用范围、控制输出的名称、位置等；主要作用是编译，解析文件； 暂时不使用loader
     },
     plugins: [
-        new HtmlWebpackPlugin({template: './src/index.html'})  // 根据项目提供HTML模板，生成新页面，并将对应的输出打包压缩输出的js，链接到页面中；详细配置见注释④
+        new HtmlWebpackPlugin({template: './src/index.html'})  // 根据项目提供HTML模板，生成新页面，并将对应的输出打包压缩输出的js，链接到页面中；
     ]
 };
 
@@ -228,10 +228,10 @@ const path = require('path');        // node内置path模块，该模块主要�
 
 const config = {
     mode: 'development',        // webpack打包的模式，上述命令里有介绍，也可以在本配置中配置
-    entry: {    // js的入口文件，支持多入口 注释①
+    entry: {    // js的入口文件，支持多入口
         main: path.resolve(__dirname,'../src/index.js')
     },
-    output: {   // js打包压缩后的出口文件，多入口时对应的配置应做相对变化 注释②
+    output: {   // js打包压缩后的出口文件，多入口时对应的配置应做相对变化
         path: path.resolve(__dirname,'../dist'),
         filename:'bundle.js'
     },
@@ -239,7 +239,7 @@ const config = {
         rules: [] // 配置loder使用的规则、作用范围、控制输出的名称、位置等；主要作用是编译，解析文件； 暂时不使用loader
     },
     plugins: [
-        new HtmlWebpackPlugin({template: './src/index.html'})  // 根据项目提供HTML模板，生成新页面，并将对应的输出打包压缩输出的js，链接到页面中；详细配置见注释④
+        new HtmlWebpackPlugin({template: './src/index.html'})  // 根据项目提供HTML模板，生成新页面，并将对应的输出打包压缩输出的js，链接到页面中；
     ],
     devServer: {        //webpack-dev-server配置（仅开发环境需要）
         contentBase: path.join(__dirname, './dist'), //编译打包文件的位置
@@ -279,16 +279,16 @@ module.exports = config;
 #### Javascript方面的所运用的`loader`
 
 ```json
-"babel-core" // JavaScript编译核心babel-core（必须）
-"babel-loader" // JavaScript编译babel-loader（必须）
-"babel-plugin-transform-runtime" // JavaScript 运行环境转换器
-"babel-preset-stage-0" // ES6,ES7语法转换ES5编译器（ES7的提案，且包含了stage-2，stage-1所有功能）
-"babel-polyfill" // IE低版本扩展JS某些API（如promise  object.defindproperty）（根据项目需求是否兼容IE低版本安装）
-"babel-runtime" // 提供将ES6转变成ES5运行环境,并不污染全局完成代码填充
-"babel-plugin-transform-decorators-legacy" // JavaScript 装饰器语法编译器（使用@语法需添加）
-"babel-plugin-transform-react-jsx" // react jsx语法转换器
-"babel-plugin-react-html-attrs" // react dom属性识别语法转换器
-"babel-preset-react" // react语法编译器
+"babel@core" // JavaScript编译核心babel@core（必须）
+"babel@loader" // JavaScript编译babel@loader（必须）
+"babel@plugin-transform-runtime" // JavaScript 运行环境转换器
+"babel@preset-stage-0" // ES6,ES7语法转换ES5编译器（ES7的提案，且包含了stage-2，stage-1所有功能）
+"babel@polyfill" // IE低版本扩展JS某些API（如promise  object.defindproperty）（根据项目需求是否兼容IE低版本安装）
+"babel@runtime" // 提供将ES6转变成ES5运行环境,并不污染全局完成代码填充
+"babel@plugin-transform-decorators-legacy" // JavaScript 装饰器语法编译器（使用@语法需添加）
+"babel@plugin-transform-react-jsx" // react jsx语法转换器
+"babel@plugin-react-html-attrs" // react dom属性识别语法转换器
+"babel@preset-react" // react语法编译器
 ```
 
 以上都是`babel-loader`相关的`loader`包，当然项目使用`babel-loader`前，还需要配置一个`babel`配置，告知`babel-loader`在使用时对应的语法文件采用何种方式去处理。该配置文件名称为`.babelrc`，`.babelrc`配置如下：
@@ -440,6 +440,115 @@ module: {
       }
     ]
 }
+```
+
+### Hint：`Webpack`配置
+
+下面的代码是我自己在`React`项目中所用的配置文件：
+
+```javascript
+const htmlWebpackPlugin = require('html-webpack-plugin'); 
+const path = require('path');
+
+const htmlPlugin = new htmlWebpackPlugin({
+    template: path.join(__dirname, "./src/index.html"),
+    filename: "index.html"
+});
+
+const config = {
+    mode: "development",
+    // mode: "production",   
+    entry: {    
+        main: path.resolve(__dirname,'./src/index.js')
+    },
+    output: {   
+        path: path.resolve(__dirname,'./dist'),
+        filename: 'bundle.js',
+        // Only for the production
+        // publicPath: "/dist/"
+    },
+    module: {
+        rules: [
+            {
+                test: /.jsx?$/,
+                use: "babel-loader",
+                include: [
+                    path.resolve(__dirname, 'src')
+                ],
+                exclude: /node_modules/
+            }, 
+            {
+                test: /\.css$/,
+                use: ["style-loader", "css-loader"]
+            },
+            {
+                test: /\.scss$/,
+                use: [
+                    {
+                        loader: "style-loader"
+                    }, 
+                    {
+                        loader: "css-loader",
+                        options: {
+                            modules: {
+                                localIdentName: "[name]__[local]___[hash:base64:7]"
+                            }
+                        }
+                    }, 
+                    {
+                        loader: "sass-loader"
+                    }
+                ],
+                exclude: /node_modules/
+            },
+            {
+                test: /\.(png|jpg|jpeg|gif|svg|woff|woff2)$/,
+                use: ["url-loader"]
+            },
+            {
+                test: /\.(eot|ttf|wav|mp3)$/,
+                use: ["file-loader"]
+            }
+        ]
+    },
+    resolve: {
+        extensions: [".js", ".jsx", ".json"],
+        alias: {
+            "@": path.join(__dirname, "./src")
+        }
+    },
+    plugins: [
+        htmlPlugin
+    ],
+    devServer: {
+        historyApiFallback: true,
+        hot: true,
+        inline: true,
+        progress: true,
+        port: 8000,
+        proxy: {
+            "/G/*": {
+                target: "http://localhost:8001",
+                changeOrigin: true,
+                secure: false
+            },
+            "/NY/*": {
+                target: "http://localhost:8001",
+                changeOrigin: true,
+                secure: false
+            },
+            "/public/*": {
+                target: "http://localhost:8001",
+                changeOrigin: true,
+                secure: false
+            }
+        }
+    },
+    // Only need in development mode
+    devtool: "eval-source-map"
+};
+
+module.exports = config;
 ```
 
 ## 参考
