@@ -206,3 +206,6 @@ div.code-toolbar > .toolbar span:focus {
 	text-decoration: none;
 }
 
+.highlight pre code * {
+	white-space: pre !important; /* this sets all children inside to nowrap */
+}
