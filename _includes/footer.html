@@ -43,6 +43,11 @@
       });
     </script>
 
+    <script src="{{ site.url }}/assets/js/prism.js"></script>
+    <script type="text/javascript">
+      $('pre').addClass("line-numbers").css("white-space", "pre-wrap");
+    </script>
+
     {% if page.mermaid %}
     <script src="{{ site.url }}/assets/js/mermaid.min.js"></script>
     <script>mermaid.initialize({startOnLoad:true});</script>
