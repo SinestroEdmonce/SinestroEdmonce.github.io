@@ -1,14 +1,16 @@
 - name: Software Engineer Keywords
   keywords:
       - Java
-      - C++/C
+      - C/C++
       - Python
-      - Swift
+      - Swift4
       - Javascript
       - HTML
       - CSS
       - Nodejs
       - React
+      - Express
+      - AWS
 
 - name: Mobile Developer Keywords
   keywords:
@@ -16,6 +18,6 @@
 
 - name: Artificial Intelligence Keywords
   keywords:
-      - Computer Vision (Major)
-      - NLP (Like)
-      - Data Science (Known)
+      - Computer Vision (Advanced)
+      - NLP (Intermediate)
+      - Data Science (Moderate)
