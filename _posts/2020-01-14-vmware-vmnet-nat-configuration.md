@@ -1,9 +1,9 @@
 ---
 layout: post
 title: VMware Player在Windows系统下使用NAT模式的端口映射
-categories: [VMware]
+categories: [VMware, Windows, NAT]
 description: VMware Player不同于其专业版平台，它不存在网络设置工具相关的功能，所以如果想要使用专业版平台一样的NAT模式端口映射，需要自行修改配置文件。
-keywords: VMware, Windows, NAT, Forward
+keywords: VMware, Windows, NAT, Port-Forwarding
 ---
 
 ``VMware Player``在功能完整性不如其专业版本``VMware Workstation Pro``，在``VMware Player``中不存在网络设置的相关工具和其他一些常用功能。但是，``VMware Player``是免费版本，并且具有核心的虚拟机安装和播放的功能。于是，因为穷（误……），我毅然决然地选择使用``VMware Player``。不过，由于需要在虚拟机中搭建Web服务器，如果不做NAT模式的端口映射，宿主机和同一局域网下的其他PC是无法直接访问虚拟机中的Web服务的，所以在``VMware Player``下使用NAT模式的端口映射还是一件必须的事情。
