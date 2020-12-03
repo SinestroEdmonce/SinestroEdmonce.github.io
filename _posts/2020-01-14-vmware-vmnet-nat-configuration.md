@@ -21,7 +21,7 @@ keywords: VMware, Windows, NAT, Forward
     
     此时可以在虚拟机中将NAT的那个网卡设置固定ip地址，比如我是``Ubuntu 18.04``的虚拟机系统:  
 
-    - 停止``Network-manger``服务:  
+    - 停止``Network-manager``服务:  
         ```bash
         sudo service network-manager stop
         ```
