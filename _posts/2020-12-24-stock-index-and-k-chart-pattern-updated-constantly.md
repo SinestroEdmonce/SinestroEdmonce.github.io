@@ -90,9 +90,22 @@ topmost: true
 
 #### MACD
 
+`MACD`是指数平滑移动平均线（Moving average convergence divergence），通过收盘时股价或指数的快变及慢变的指数移动平均值（`EMA`）之间的差计算得出。“快”指更短时段的`EMA`，“慢”指更长时段的`EMA`，常用的是12及26日`EMA`。
+
+首先要搞清楚`MACD`是怎么来的，想要弄明白`MACD`指标必须要知道三大要素，`DIF`、`DEA`和红柱绿柱。
+
+1. `DIF` = 12日`EMA` - 26日`EMA`，
+
+    `DIF`绝对值的大小代表了长短期均线（`EMA`）距离（开口）的大小，当12日均线在26日均线之上的时候，股价短期较长期处于上涨状态，`DIF`为正，在零轴上方；当12日均线在26日均线之下的时候，股价短期较长期处于下跌状态，`DIF`为负，在零轴下方。
+
+    当`DIF`从下往上穿过零轴时，短期均线**金叉**长期均线；反之，当`DIF`从上往下穿过零轴时，短期均线**死叉**长期均线。在趋势行情中，金叉与死叉是有效的买卖信号，但在震荡行情中，金叉与死叉基本上都是假信号，可以通过改变`EMA`的时段来获得不同时段下的`DIF`从而更准确地判断信号的真假。
+
+
 #### KDJ
 
 #### BBI
+
+[BBI](https://zhuanlan.zhihu.com/p/34505138)
 
 #### QRR
 
@@ -100,16 +113,28 @@ topmost: true
 
 ### k线图模型篇
 
-https://wiki.mbalib.com/wiki/倒锤形
+#### 倒锤形
 
-https://wiki.mbalib.com/wiki/射击之星
+[倒锤形](https://wiki.mbalib.com/wiki/倒锤形)
 
-https://wiki.mbalib.com/wiki/锤子线
+#### 射击之星
 
-https://wiki.mbalib.com/zh-tw/早晨之星
+[射击之星](https://wiki.mbalib.com/wiki/射击之星)
 
-https://wiki.mbalib.com/wiki/黄昏之星
+#### 锤子线
 
-https://baike.baidu.com/item/T%E5%AD%97%E7%BA%BF
+[锤子线](https://wiki.mbalib.com/wiki/锤子线)
 
-https://wiki.mbalib.com/wiki/T%E5%AD%97%E7%BA%BF
+#### 黎明之星
+
+[黎明之星](https://wiki.mbalib.com/zh-tw/早晨之星)
+
+#### 黄昏之星
+
+[黄昏之星](https://wiki.mbalib.com/wiki/黄昏之星)
+
+#### T字线
+
+[T字线(1)](https://baike.baidu.com/item/T%E5%AD%97%E7%BA%BF)
+
+[T字线(2)](https://wiki.mbalib.com/wiki/T%E5%AD%97%E7%BA%BF)
