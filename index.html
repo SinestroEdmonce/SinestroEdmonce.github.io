@@ -34,7 +34,7 @@ comments: false
     <div class="columns">
         <div class="column two-thirds">
             <ol class="repo-list">
-                {% for post in site.posts %}
+                {% for post in paginator.posts %}
                 {% if paginator.page == 1 %}
                 {% if post.topmost == true %}
                 <li class="repo-list-item">
