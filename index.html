@@ -39,8 +39,8 @@ comments: false
                 {% if post.topmost == true %}
                 <li class="repo-list-item">
                     <h3 class="repo-list-name">
-                        <a href="{{ site.url }}{{ post.url }}"><span
-                                class="top-most-flag">[置顶] </span>{{ post.title }}</a>
+                        <a href="{{ site.url }}{{ post.url }}"><span class="top-most-flag">[置顶]
+                            </span>{{ post.title }}</a>
                     </h3>
                     <p class="repo-list-description">
                         {{ post.excerpt | strip_html | strip }}
@@ -92,33 +92,80 @@ comments: false
             {% include sidebar-popular-repo.html %}
         </div>
     </div>
+
     <div class="pagination text-align">
         <div class="btn-group">
-            {% if paginator.previous_page %}
-            {% if paginator.previous_page == 1 %}
-            <a href="{{ site.url }}/" class="btn btn-outline">&laquo;</a>
+            {% if paginator.total_pages > 1 %}
+            {% if paginator.page == 1 %}
+            <a class="btn btn-outline">首页</a>
             {% else %}
-            <a href="{{ site.url }}/page{{paginator.previous_page}}" class="btn btn-outline">&laquo;</a>
+            <a href="/" class="btn btn-outline">首页</a>
+            {% endif %}
+            <!-- 如果有前一页的页号 -->
+            {% if paginator.previous_page %}
+            <!-- 如果前一页的页号是1 -->
+            {% if paginator.previous_page == 1 %}
+            <a href="/" class="btn btn-outline">&laquo;</a>
+            {% else %}
+            <a href="/page{{paginator.previous_page}}" class="btn btn-outline">&laquo;</a>
             {% endif %}
             {% else %}
             <button disabled="disabled" href="javascript:;" class="btn btn-outline">&laquo;</button>
             {% endif %}
-            {% if paginator.page == 1 %}
-            <a href="javascript:;" class="active btn btn-outline">1</a>
+            {% if paginator.page <= 3 %}
+            {% for num in (1..paginator.total_pages) %}
+            {% if forloop.index <= 5 %}
+            {% if num != paginator.page %}
+            {% if num == 1 %}
+            <a href="/" class="btn btn-outline">1</a>
             {% else %}
-            <a href="{{ site.url }}/" class="btn btn-outline">1</a>
+            <a href="/page{{num}}" class="btn btn-outline">{{num}}</a>
             {% endif %}
-            {% for count in (2..paginator.total_pages) %}
-            {% if count == paginator.page %}
-            <a href="javascript:;" class="active btn btn-outline">{{count}}</a>
-            {% else %}
-            <a href="{{ site.url }}/page{{count}}" class="btn btn-outline">{{count}}</a>
+            {% endif %}
+            <!--如果当前页码数和num相等，则不会出现连接地址，也不能点击，并且加上背景色样式-->
+            {% if num == paginator.page %}
+            <a href="javascript:;" class="active btn btn-outline">{{num}}</a>
+            {% endif %}
             {% endif %}
             {% endfor %}
+            {% else %}
+            {% assign index1 = paginator.page|plus:1 %}
+            {% assign index2 = paginator.page|plus:2 %}
+            {% if index1 > paginator.total_pages and paginator.total_pages != 4 %}
+            <a href="/page{{paginator.page|plus:-4}}" class="btn btn-outline">{{paginator.page|plus:-4}}</a>
+            {% endif %}
+            {% if index2 > paginator.total_pages %}
+            <a href="/page{{paginator.page|plus:-3}}" class="btn btn-outline">{{paginator.page|plus:-3}}</a>
+            {% endif %}
+            <a href="/page{{paginator.page|plus:-2}}" class="btn btn-outline">{{paginator.page|plus:-2}}</a>
+            <a href="/page{{paginator.page|plus:-1}}" class="btn btn-outline">{{paginator.page|plus:-1}}</a>
+            <a href="javascript:;" class="active btn btn-outline">{{paginator.page}}</a>
+            {% if index1 <= paginator.total_pages %}
+            <a href="/page{{paginator.page|plus:1}}" class="btn btn-outline">{{paginator.page|plus:1}}</a>
+            {% endif %}
+            {% if index2 <= paginator.total_pages %}
+            <a href="/page{{paginator.page|plus:2}}" class="btn btn-outline">{{paginator.page|plus:2}}</a>
+            {% endif %}
+            {% endif %}
+
             {% if paginator.next_page %}
-            <a href="{{ site.url }}/page{{paginator.next_page}}" class="btn btn-outline">&raquo;</a>
+            <a href="/page{{paginator.next_page}}" class="btn btn-outline">&raquo;</a>
+            <a href="{{ site.baseurl}}/page{{paginator.total_pages}}" class="btn btn-outline">末页</a>
             {% else %}
             <button disabled="disabled" href="javascript:;" class="btn btn-outline">&raquo;</button>
+            <a class="btn btn-outline">末页</a>
+            {% endif %}
+            <a class="btn btn-outline disabled">第{{paginator.page}}页 / 共{{paginator.total_pages}}页</a>
+            <!-- 只有一页的情况 -->
+            {% else %}
+            <!-- 如果有文章才会显示 -->
+            {% if paginator.posts %}
+            <a class="btn btn-outline">首页</a>
+            <button disabled="disabled" href="javascript:;" class="btn btn-outline">&laquo;</button>
+            <a href="javascript:;" class="active btn btn-outline">1</a>
+            <button disabled="disabled" href="javascript:;" class="btn btn-outline">&raquo;</button>
+            <a class="btn btn-outline">末页</a>
+            <a class="btn btn-outline disabled">第{{paginator.page}}页 / 共{{paginator.total_pages}}页</a>
             {% endif %}
         </div>
     </div>
