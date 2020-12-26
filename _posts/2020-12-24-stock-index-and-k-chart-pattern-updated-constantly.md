@@ -123,12 +123,17 @@ topmost: true
 
 3. 红柱与绿柱，其值的计算方法是`(DIF-DEA)*2`。红绿柱的数值是`DIF`与`DEA`的差值，红绿柱越长，代表`DIF`与`DEA`的距离越大，也就是上涨或下跌的力度越大。当红柱变为绿柱时，对应着`DIF`与`DEA`的死叉；当绿柱变为红柱时，对应着`DIF`与`DEA`的金叉。
 
-
 #### KDJ
+
+[KDJ](https://zhuanlan.zhihu.com/p/99364915)
 
 #### BBI
 
 [BBI](https://zhuanlan.zhihu.com/p/34505138)
+
+#### BOLL
+
+[BOLL](https://wiki.mbalib.com/wiki/布林线指标)
 
 #### QRR
 
