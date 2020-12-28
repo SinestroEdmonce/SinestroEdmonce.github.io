@@ -143,7 +143,7 @@ topmost: true
 
     ![img](https://github.com/SinestroEdmonce/SinestroEdmonce.github.io/raw/master/images/posts/stocks/sunw_20201224.jpg)
 
-    **预测**：后市看涨，一旦`MACD`金叉坐实且`MAVOL`放量，可以考虑追涨增加少量仓位。但由于基本面上，`SUNW`市值很低且仍处于亏损状态，考虑短期获利兑现。
+    **预测**：后市看涨，一旦`MACD`金叉坐实且`MAVOL`放量，可以考虑追涨增加少量仓位。但由于基本面上，`SUNW`市值很低且仍处于亏损状态，不易长持，考虑短期获利兑现。
 
 8. `JKS`
 
