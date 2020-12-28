@@ -161,3 +161,57 @@ topmost: true
     **预测**：后市看跌，若k线向下突破`BOLL`中轨，则考虑回调持续；若k线连续多个交易日站稳`BOLL`中轨，则考虑少量建仓。
 
 9. `FSR`
+
+    技术面观察，
+    - k线位于`BBI`上方，多头微弱优势，进入上涨行情的概率较高
+
+    - k线基本和`BOLL`中轨重合，若后市成功向上突破，则进入上涨行情的概率高，若突破失败，则仍会继续横盘整理一段时间。
+
+    - `MACD`即将金叉，若下一个交易日k线向上突破`BOLL`中轨，则金叉坐实，进入上涨行情，可以逢低买入建仓待涨。
+
+    - `KDJ`金叉后J线持续抬头，行情转入上行的概率高。
+
+    ![img](https://github.com/SinestroEdmonce/SinestroEdmonce.github.io/raw/master/images/posts/stocks/fsr_20201224.jpg)
+
+    **预测**：若k线向上突破`BOLL`中轨，可以低位入场，持股待涨；若k线向上突破失败，则重新横盘整理，可以继续耐心等待。
+
+10. `PFE`
+
+    技术面观察，
+    - k线位于`BBI`下方，空头优势，下跌行情可能持续。
+
+    - k线位于`BOLL`中轨下方，下跌行情持续的概率高。
+
+    - `MAVOL`持续缩量，市场情绪低迷。
+
+    - `MACD`死叉坐实，但`DIF`绝对值增长速率放缓，且`KDJ`出现金叉兆头，考虑股价低位整理，未来几天可能会反弹。
+    
+    ![img](https://github.com/SinestroEdmonce/SinestroEdmonce.github.io/raw/master/images/posts/stocks/pfe_20201224.jpg)
+
+    **预测**：后市反弹概率较高，但在k线没有向上突破`BOLL`中轨和`BBI`之前，行情以震荡整理为主。
+
+11. `IQ`
+
+    技术面观察，
+    - k线位于`BBI`下方，空头优势，下跌行情可能持续。
+
+    - k线位于`BOLL`中轨下方，但突破并站稳`BOLL`下轨，考虑基本进入底部区域，但低位整理行情可能持续。
+
+    - `MACD`出现绿柱量能缩小，即`DIF`绝对值缩小，出现掉头；`KDJ`出现金叉预兆，考虑股价低位整理后出现反弹的概率高。
+
+    ![img](https://github.com/SinestroEdmonce/SinestroEdmonce.github.io/raw/master/images/posts/stocks/iq_20201224.jpg)
+
+    **预测**：后市低位整理的波段行情可能会延续一段时间。但考虑筹码下移明显，未来出现上涨行情的概率较高，可以此时选择建立底仓，也可以再耐心等待一段时间。
+
+12. `AAL`
+
+    技术面观察，
+    - k线位于`BBI`下方，空头优势，下跌行情可能持续。
+
+    - k线位于`BOLL`中轨，行情弱势的概率较高。
+
+    - `MACD`和`KDJ`都处于弱势区域，弱势行情可能持续。
+
+    ![img](https://github.com/SinestroEdmonce/SinestroEdmonce.github.io/raw/master/images/posts/stocks/aal_20201224.jpg)
+
+    **预测**：后市看跌，冬季疫情加重利空航空股，中短期下跌概率高。但考虑股价进入超卖区，可以低位少量建仓。
