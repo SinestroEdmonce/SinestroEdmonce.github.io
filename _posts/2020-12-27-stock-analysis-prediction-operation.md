@@ -51,7 +51,7 @@ topmost: true
 
     ![img](https://github.com/SinestroEdmonce/SinestroEdmonce.github.io/raw/master/images/posts/stocks/pltr_20201224.jpg)
 
-    **预测**：在未出现利好前，短期内看跌，后市k线向下突破`BOLL`中轨的概率上升。但若连续两到三个交易日k线站稳`BOLL`中轨，可以逢低买入建立底仓。
+    **预测**：在未出现利好前，短期内看跌，后市k线向下突破`BOLL`中轨的概率较高。但若连续两到三个交易日k线站稳`BOLL`中轨，可以逢低买入建立底仓。
 
 2. `FSLY`
 
