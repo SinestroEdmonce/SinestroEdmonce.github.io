@@ -28,7 +28,7 @@ topmost: true
 
     - `MAVOL`量能缩小，资金入场较少，情绪偏低迷。
 
-    ![img](https://github.com/SinestroEdmonce/SinestroEdmonce.github.io/raw/master/images/posts/stocks/spx_20201224.jpg)
+    ![img](https://github.com/SinestroEdmonce/SinestroEdmonce.github.io/raw/master/images/posts/stocks/20201224/spx_20201224.jpg)
 
     **预测**：经济刺激法案再起悬念，冬季疫情加重，消息面整体低迷，故后市重新进入箱体调整的概率较高。同时也需要积极观察消息面变化，一旦利好出现，k线可能会向上突破。
 
@@ -49,7 +49,7 @@ topmost: true
 
     - `KDJ`指标上，J线掉头，短期内可能发生死叉的概率较大。
 
-    ![img](https://github.com/SinestroEdmonce/SinestroEdmonce.github.io/raw/master/images/posts/stocks/pltr_20201224.jpg)
+    ![img](https://github.com/SinestroEdmonce/SinestroEdmonce.github.io/raw/master/images/posts/stocks/20201224/pltr_20201224.jpg)
 
     **预测**：在未出现利好前，短期内看跌，后市k线向下突破`BOLL`中轨的概率较高。但若连续两到三个交易日k线站稳`BOLL`中轨，可以逢低买入建立底仓。
 
@@ -66,7 +66,7 @@ topmost: true
 
     - `KDJ`已经死叉，但死叉当日并未放量，可能是假信号，需要积极观察未来指标走向。
 
-    ![img](https://github.com/SinestroEdmonce/SinestroEdmonce.github.io/raw/master/images/posts/stocks/fsly_20201224.jpg)
+    ![img](https://github.com/SinestroEdmonce/SinestroEdmonce.github.io/raw/master/images/posts/stocks/20201224/fsly_20201224.jpg)
 
     **预测**：后市看跌，整体技术面图形走坏，短期内回调概率较高。但若连续两到三个交易日k线站稳`BOLL`中轨，考虑是短期回调结束，可以逢低买入建仓。
 
@@ -81,7 +81,7 @@ topmost: true
 
     - `MACD`已经死叉，`KDJ`假金叉并纠缠，当前处于下跌行情的概率较高。
 
-    ![img](https://github.com/SinestroEdmonce/SinestroEdmonce.github.io/raw/master/images/posts/stocks/snow_20201224.jpg)
+    ![img](https://github.com/SinestroEdmonce/SinestroEdmonce.github.io/raw/master/images/posts/stocks/20201224/snow_20201224.jpg)
 
     **预测**：未来股价下跌概率高，但可以积极观察，一旦`BOLL`下轨支撑，k线向下突破失败，则可以考虑建立底仓。在消息面没有重大变化的情况下，未来股价进入箱体震荡的概率较高。
 
@@ -96,7 +96,7 @@ topmost: true
 
     - `KDJ`出现死叉，信号真假需要观察，但k值处于超买区附近。
 
-    ![img](https://github.com/SinestroEdmonce/SinestroEdmonce.github.io/raw/master/images/posts/stocks/jmia_20201224.jpg)
+    ![img](https://github.com/SinestroEdmonce/SinestroEdmonce.github.io/raw/master/images/posts/stocks/20201224/jmia_20201224.jpg)
 
     **预测**：后市看跌，股价回调概率高。积极观察k线时候会向下突破`BOLL`中轨，若中轨支撑，考虑回调结束。
 
@@ -113,7 +113,7 @@ topmost: true
 
     - `KDJ`出现J线掉头，需要积极观察，若后市出现死叉则行情扭转概率高。
 
-    ![img](https://github.com/SinestroEdmonce/SinestroEdmonce.github.io/raw/master/images/posts/stocks/fcel_20201224.jpg)
+    ![img](https://github.com/SinestroEdmonce/SinestroEdmonce.github.io/raw/master/images/posts/stocks/20201224/fcel_20201224.jpg)
 
     **预测**：未来短期股价上涨概率较高，仍需积极观察，若k线向下突破`BOLL`上轨，考虑进入弱势行情；若同时`KDJ`死叉坐实，则进入回调。
 
@@ -126,7 +126,7 @@ topmost: true
 
     - `MACD`可能金叉，但未坐实；`KDJ`出现J线掉头，但k值处于中性区，仍需观察。
 
-    ![img](https://github.com/SinestroEdmonce/SinestroEdmonce.github.io/raw/master/images/posts/stocks/spi_20201224.jpg)
+    ![img](https://github.com/SinestroEdmonce/SinestroEdmonce.github.io/raw/master/images/posts/stocks/20201224/spi_20201224.jpg)
 
     **预测**：后市横盘整理概率较高，需要积极观察，一旦`MACD`金叉坐实且k线向上突破`BOLL`中轨，则考虑进入上涨行情。
 
@@ -141,7 +141,7 @@ topmost: true
 
     - `KDJ`已经金叉且坐实，考虑进入上涨行情。
 
-    ![img](https://github.com/SinestroEdmonce/SinestroEdmonce.github.io/raw/master/images/posts/stocks/sunw_20201224.jpg)
+    ![img](https://github.com/SinestroEdmonce/SinestroEdmonce.github.io/raw/master/images/posts/stocks/20201224/sunw_20201224.jpg)
 
     **预测**：后市看涨，一旦`MACD`金叉坐实且`MAVOL`放量，可以考虑追涨增加少量仓位。但由于基本面上，`SUNW`市值很低且仍处于亏损状态，不易长持，考虑短期获利兑现。
 
@@ -156,7 +156,7 @@ topmost: true
 
     - `MACD`出现顶背离；`KDJ`即将死叉，后市积极观察，若死叉坐实，则下跌行情基本到来。
 
-    ![img](https://github.com/SinestroEdmonce/SinestroEdmonce.github.io/raw/master/images/posts/stocks/jks_20201224.jpg)
+    ![img](https://github.com/SinestroEdmonce/SinestroEdmonce.github.io/raw/master/images/posts/stocks/20201224/jks_20201224.jpg)
 
     **预测**：后市看跌，若k线向下突破`BOLL`中轨，则考虑回调持续；若k线连续多个交易日站稳`BOLL`中轨，则考虑少量建仓。
 
@@ -171,7 +171,7 @@ topmost: true
 
     - `KDJ`金叉后J线持续抬头，行情转入上行的概率高。
 
-    ![img](https://github.com/SinestroEdmonce/SinestroEdmonce.github.io/raw/master/images/posts/stocks/fsr_20201224.jpg)
+    ![img](https://github.com/SinestroEdmonce/SinestroEdmonce.github.io/raw/master/images/posts/stocks/20201224/fsr_20201224.jpg)
 
     **预测**：若k线向上突破`BOLL`中轨，可以低位入场，持股待涨；若k线向上突破失败，则重新横盘整理，可以继续耐心等待。
 
@@ -186,7 +186,7 @@ topmost: true
 
     - `MACD`死叉坐实，但`DIF`绝对值增长速率放缓，且`KDJ`出现金叉兆头，考虑股价低位整理，未来几天可能会反弹。
     
-    ![img](https://github.com/SinestroEdmonce/SinestroEdmonce.github.io/raw/master/images/posts/stocks/pfe_20201224.jpg)
+    ![img](https://github.com/SinestroEdmonce/SinestroEdmonce.github.io/raw/master/images/posts/stocks/20201224/pfe_20201224.jpg)
 
     **预测**：后市反弹概率较高，但在k线没有向上突破`BOLL`中轨和`BBI`之前，行情以震荡整理为主。
 
@@ -199,7 +199,7 @@ topmost: true
 
     - `MACD`出现绿柱量能缩小，即`DIF`绝对值缩小，出现掉头；`KDJ`出现金叉预兆，考虑股价低位整理后出现反弹的概率高。
 
-    ![img](https://github.com/SinestroEdmonce/SinestroEdmonce.github.io/raw/master/images/posts/stocks/iq_20201224.jpg)
+    ![img](https://github.com/SinestroEdmonce/SinestroEdmonce.github.io/raw/master/images/posts/stocks/20201224/iq_20201224.jpg)
 
     **预测**：后市低位整理的波段行情可能会延续一段时间。但考虑筹码下移明显，未来出现上涨行情的概率较高，可以此时选择建立底仓，也可以再耐心等待一段时间。
 
@@ -212,7 +212,7 @@ topmost: true
 
     - `MACD`和`KDJ`都处于弱势区域，弱势行情可能持续。
 
-    ![img](https://github.com/SinestroEdmonce/SinestroEdmonce.github.io/raw/master/images/posts/stocks/aal_20201224.jpg)
+    ![img](https://github.com/SinestroEdmonce/SinestroEdmonce.github.io/raw/master/images/posts/stocks/20201224/aal_20201224.jpg)
 
     **预测**：后市看跌，冬季疫情加重利空航空股，中短期下跌概率高。但考虑股价进入超卖区，可以低位少量建仓。
 
@@ -258,5 +258,5 @@ topmost: true
 
     - `MACD`上`DIF`平缓并出现掉头迹象，考虑到`KDJ`出现死叉信号，并且`MAVOL`有放量迹象，信号可能为真，未来`MACD`死叉概率较高。
 
-    fcel_20201228.jpg
+    
     
