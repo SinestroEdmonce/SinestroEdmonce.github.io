@@ -288,6 +288,6 @@ topmost: true
 
     - `MAVOL`今日放量成交，`KDJ`死叉坐实的概率高，`MACD`量能缩小，`DIF`掉头向下，未来股价弱势行情的概率较高。
 
-    ![img](https://github.com/SinestroEdmonce/SinestroEdmonce.github.io/raw/master/images/posts/stocks/20201224/tdoc_20201228.jpg)
+    ![img](https://github.com/SinestroEdmonce/SinestroEdmonce.github.io/raw/master/images/posts/stocks/20201228/tdoc_20201228.jpg)
 
     **预测**：短期后市看跌，k线进一步下探到`BOLL`下轨附近的概率高。
