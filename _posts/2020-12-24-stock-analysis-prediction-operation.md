@@ -215,3 +215,14 @@ topmost: true
     ![img](https://github.com/SinestroEdmonce/SinestroEdmonce.github.io/raw/master/images/posts/stocks/aal_20201224.jpg)
 
     **预测**：后市看跌，冬季疫情加重利空航空股，中短期下跌概率高。但考虑股价进入超卖区，可以低位少量建仓。
+
+
+### 2020-12-28
+
+以下是2020年12月24日（PST）美股观察，分析及预测。
+
+#### 大盘整体观察
+
+以下是大盘整体观察，分析及预测。消息面上，经济刺激法案（即疫情纾困法案）12/24晚间已签署，并且未来有希望达成更大的协议。
+
+1. 标普指数
