@@ -237,7 +237,7 @@ topmost: true
 
     5. `KDJ`金叉尚未坐实，后市仍需积极观察。
 
-    spx_20201228.jpg
+    ![img](https://github.com/SinestroEdmonce/SinestroEdmonce.github.io/raw/master/images/posts/stocks/20201228/spx_20201228.jpg)
 
     **预测**：消息面上，疫情纾困法案签署，短期利好传统行业例如运输、酒店和线下零售等等。长期来看，利好美股未来各大热点，由于海量资金入场，会继续维持美股市场“繁荣”行情。未来指数震荡上行的概率高，但也要警惕量价背离现象持续出现带来的市场观望情绪加重。
 
@@ -258,5 +258,36 @@ topmost: true
 
     - `MACD`上`DIF`平缓并出现掉头迹象，考虑到`KDJ`出现死叉信号，并且`MAVOL`有放量迹象，信号可能为真，未来`MACD`死叉概率较高。
 
-    
-    
+    ![img](https://github.com/SinestroEdmonce/SinestroEdmonce.github.io/raw/master/images/posts/stocks/20201228/fcel_20201228.jpg)
+
+    **回顾**：12/28的股价走势和之前的预测[`FCEL`](#fcel-12-24)出现了偏差，主要原因有二，一是没有考虑到底部筹码在前两个交易日出逃，筹码重心明显上移，这样的信号和机构（庄家）派发筹码很类似；二是存有一定侥幸心理，认为12/24成交缩量，`KDJ`即将死叉属于假信号，但考虑到12/24这个交易日只有半天，这样的考量是不谨慎的。
+
+    **预测**：未来股价进一步回调的概率较高，如果k线向下突破`BOLL`中轨失败，连续两到三个交易日位于`BOLL`中轨上方，则考虑回调结束，在回调期间可以少量建仓。若下一交易日k线强势向上突破`BOLL`上轨，则考虑短期内还有一定涨幅，可以继续持股，逢高获利兑现。
+
+3. `AAL`<span id="aal-12-28"></span>
+
+    技术面观察，
+    - k线基本与`BBI`重合，多空博弈均衡。
+
+    - k线位于`BOLL`中轨下方，仍处于弱势行情。k线12/28日尝试向上突破`BOLL`中轨失败，短期横盘吸筹或者直接尝试向上突破的概率高。
+
+    - `MAVOL`量能相对较高，但仍需看来判断`KDJ`金叉信号是否坐实。
+
+    ![img](https://github.com/SinestroEdmonce/SinestroEdmonce.github.io/raw/master/images/posts/stocks/20201228/aal_20201228.jpg)
+
+    **回顾**：12/28的股价走势和之前的预测[`AAL`](#aal-12-24)出现了偏差，主要原因是消息面疫情纾困法案的利好坐实。
+
+    **预测**：下一个交易日的即时量比持续大于1（即可能成交放量），则k线向上突破`BOLL`中轨的概率高，并且坐实`KDJ`金叉，会出现一波小的涨幅行情。否则，短期横盘整理并吸筹的概率高。
+
+4. `TDOC`<span id="tdoc-12-28"></span>
+
+    技术面观察，
+    - k线位于`BBI`下方，空头微弱优势，未来股价进一步回调的概率较高。
+
+    - k线与`BOLL`中轨基本重合，但k线12/28收盘价向下突破`BOLL`中轨，考虑短期内进一步回调的概率较高
+
+    - `MAVOL`今日放量成交，`KDJ`死叉坐实的概率高，`MACD`量能缩小，`DIF`掉头向下，未来股价弱势行情的概率较高。
+
+    ![img](https://github.com/SinestroEdmonce/SinestroEdmonce.github.io/raw/master/images/posts/stocks/20201224/tdoc_20201228.jpg)
+
+    **预测**：短期后市看跌，k线进一步下探到`BOLL`下轨附近的概率高。
