@@ -562,7 +562,7 @@ topmost: true
 
     - k线与`BOLL`中轨基本重合，盘中一度向下击穿`BOLL`中轨，显示出市场的不安情绪加剧。
 
-    spx_20210104.jpg
+    ![img](https://github.com/SinestroEdmonce/SinestroEdmonce.github.io/raw/master/images/posts/stocks/20210104/spx_20210104.jpg)
 
     **预测**：01/04的大盘受到了消息面利空的冲击，高开低走。消息面上的不确定性加剧导致大盘整体走势低迷，但考虑到本周选举相关事宜将尘埃落定，在动荡之后，大盘仍有可能继续维持之前的小幅上行走势。
 
@@ -583,7 +583,7 @@ topmost: true
 
     - `KDJ`继续下探，`MACD`同样也掉头且未来有可能死叉，后市继续震荡下行的概率较高。
 
-    fcel_20210104.jpg
+    ![img](https://github.com/SinestroEdmonce/SinestroEdmonce.github.io/raw/master/images/posts/stocks/20210104/fcel_20210104.jpg)
 
     **回顾**：之前的预测[`FCEL`](#fcel-12-30)认为“股价可能会在短期出现反弹”是有所偏差的。01/04受到了大盘低迷和市场不确定性的双重影响，股价进一步下探，那么未来继续向下去踩`BOLL`中轨以及20日均线的概率高。
 
@@ -597,6 +597,8 @@ topmost: true
     - k线位于`BOLL`中轨下方，处于弱势行情，进一步下探的概率高。
 
     - `KDJ`与`MACD`死叉基本坐实。且连续跌破20日和30日均线后，日均线支撑比较低，未来下探空间较大。
+
+    ![img](https://github.com/SinestroEdmonce/SinestroEdmonce.github.io/raw/master/images/posts/stocks/20210104/jmia_20210104.jpg)
 
     **回顾**：[`JMIA`](#jmia-12-31)继续呈现下跌行情。一是受到大盘低迷的影响，二是低位筹码离场速率较高。
 
