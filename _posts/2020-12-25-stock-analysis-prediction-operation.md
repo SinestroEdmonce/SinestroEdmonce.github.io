@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 炒股笔记[2]：美股实操观察、分析及预测（持续更新）
+title: 炒股笔记[2]：美股观察、分析及预测[1]（持续更新）
 categories: [Notes]
 description: 记录了一个炒股小白的成长。所有的分析和预测都基于个人理解，不构成买卖股票的建议，参考借鉴、回溯学习是最重要的。
 keywords: Notes, Stock
@@ -652,7 +652,7 @@ topmost: true
 
     **预测**：后市震荡下行的概率较高。但如果连续站稳`BOLL`中轨则可能会重新开启上涨行情。
 
-2. `M`<span id="m-01-05"></span>
+3. `M`<span id="m-01-05"></span>
 
     技术面观察，
     - k线位于`BBI`上方，多头微弱优势
@@ -667,7 +667,7 @@ topmost: true
 
     **预测**：如果连续多个交易日站稳`BOLL`中轨，那么后市拉升概率较高。如果向下突破`BOLL`中轨，则可能进一步下探到`BOLL`下轨，在箱体底部做一些整理，使得筹码进一步集中，拉升阻力更小。
 
-2. `JWN`<span id="jwn-01-05"></span>
+4. `JWN`<span id="jwn-01-05"></span>
 
     技术面观察，
     - k线位于`BBI`上方，多头微弱优势
@@ -678,4 +678,121 @@ topmost: true
 
     ![img](https://github.com/SinestroEdmonce/SinestroEdmonce.github.io/raw/master/images/posts/stocks/20210105/jwn_20210105.jpg)
 
-    **预测**：由于横盘整理时间很长，从技术面上来讲，筹码集中度高，拉升阻力小，未来可能横盘整理一小段时间后就会出现新的上涨行情。
+    **预测**：由于横盘整理时间很长，从技术面上来讲，筹码集中度高，拉升阻力小，未来可能会出现新的上涨行情，但也有可能继续横盘整理来吸筹。
+
+
+### 2021-01-07
+
+以下是2020年01月07日（PST）美股观察，分析及预测。
+
+#### 大盘整体观察
+
+以下是大盘整体观察，分析及预测。消息面上，特朗普承诺会平稳进行权利交接，拜登上台已成定局。新能源，医药和大麻股集体大涨。大盘再创新高。
+
+1. 标普指数<span id="spx-01-04"></span>
+
+    技术面观察，
+    - k线基本与`BBI`重合，多头优势。
+
+    - k线位于`BOLL`中轨上方，且今天向上突破`BOLL`上轨，上涨行情强劲。
+
+    ![img](https://github.com/SinestroEdmonce/SinestroEdmonce.github.io/raw/master/images/posts/stocks/20210107/spx_20210107.jpg)
+
+    **预测**：大盘高开高走，消息面上拜登上台坐实，新能源、医药股领涨，大盘整体呈现强劲上涨态势，但需要警惕的是由于大量筹码获利，短期内可能会出现获利兑现筹码离场的现象，谨慎追高，在利好未出的情况下，大盘仍然可能呈现震荡、小幅上行的行情。
+
+2. 纳斯达克指数和道琼斯指数基本和上述相仿。
+
+#### 个股观察、分析及预测
+
+1. 以下个股未来走势维持之前的判断，可以点击查看其最近的分析和预测（未来将不再关注`AMZN`和`SPI`），
+
+    - [`AMZN`](#amzn-01-05)，[`M`](#m-01-05)，[`JWN`](#jwn-01-05)，[`JKS`](#jks-12-24)，[`FSR`](#fsr-12-24)，[`PFE`](#pfe-12-24)，[`AAL`](#aal-12-28)，[`IQ`](#iq-12-29)，[`TDOC`](#tdoc-12-30)，[`JMIA`](#jmia-01-04)
+
+2. `PLTR`<span id="pltr-01-07"></span>
+
+    技术面观察，
+    - k线和`BBI`基本重合，多空均势。
+
+    - k线位于`BOLL`下轨上方，从箱体底部抬升，未来延续上涨行情的概率较高，但能否突破`BOLL`中轨仍需观察。
+
+    - `MACD`抬头，`KDJ`金叉但并未坐实，未来若成交量放量，股价上行，则坐实概率高。
+
+    ![img](https://github.com/SinestroEdmonce/SinestroEdmonce.github.io/raw/master/images/posts/stocks/20210107/pltr_20210107.jpg)
+
+    **回顾**：对于[`PLTR`](#pltr-12-24)这支股票，之前的预测基本准确。
+
+    **预测**：后市向`BOLL`中轨上行的概率较高，但仍然需要成交量支持。
+
+    **相似股票**：`SNOW`<span id="snow-01-07"></span>，`FSLY`<span id="fsly-01-07"></span>
+
+3. `SUNW`<span id="sunw-01-07"></span>
+
+    技术面观察，
+    - k线位于`BBI`上方，多头强势。
+
+    - k线位于`BOLL`中轨上方，且今天收盘价向上突破`BOLL`上轨，收出了一个近似光头光脚大阳线的k线形态，未来可能会进一步拉升。
+
+    ![img](https://github.com/SinestroEdmonce/SinestroEdmonce.github.io/raw/master/images/posts/stocks/20210107/sunw_20210107.jpg)
+
+    **回顾**：对于[`SUNW`](#sunw-12-29)这支股票，之前的预测基本准确。
+
+    **预测**：受到消息面刺激，股价出现大幅拉升，但是要警惕大量筹码高位获利兑现，股价出现大幅跳水的可能。
+
+4. `SPI`<span id="spi-01-07"></span>
+
+    技术面观察，
+    - k线位于`BBI`上方，多头强势。
+
+    - k线位于`BOLL`中轨上方，且今天收盘价向上突破`BOLL`上轨，但多空博弈激烈。
+
+    ![img](https://github.com/SinestroEdmonce/SinestroEdmonce.github.io/raw/master/images/posts/stocks/20210107/spi_20210107.jpg)
+
+    **回顾**：对于[`SPI`](#spi-12-24)这支股票，之前的预测基本准确。
+
+    **预测**：受到消息面刺激，股价出现大幅拉升，但是由于高位筹码较多，未来拉升阻力高，拉升相对温和。同样要警惕大量筹码高位获利兑现，股价出现大幅跳水的可能。
+
+5. `FCEL`<span id="fcel-01-07"></span>
+
+    技术面观察，
+    - k线位于`BBI`上方，多头强势。
+
+    - k线位于`BOLL`中轨上方，且今天收盘价向上突破`BOLL`上轨，多头略站优势。
+
+    - `MACD`和`KDJ`均金叉且向上抬头，成交量放量，金叉坐实概率较高。
+
+    ![img](https://github.com/SinestroEdmonce/SinestroEdmonce.github.io/raw/master/images/posts/stocks/20210107/fcel_20210107.jpg)
+
+    **预测**：受到消息面刺激，股价出现大幅拉升，未来仍有进一步拉升的可能，因为筹码集中且平均成本较高，技术图形整体向好。但是也要警惕大量筹码高位获利兑现，股价出现大幅跳水的可能。
+
+6. `SPWR`<span id="spwr-01-07"></span>
+
+    技术面观察，
+    - k线位于`BBI`上方，多头强势。
+
+    - k线位于`BOLL`中轨上方，但今天收盘价向上突破`BOLL`上轨失败。低位筹码离场较多。
+
+    ![img](https://github.com/SinestroEdmonce/SinestroEdmonce.github.io/raw/master/images/posts/stocks/20210107/spwr_20210107.jpg)
+
+    **预测**：这只股票同样也是太阳能光伏股，属于新能源概念，并且这支股票基本面不错，目前处于盈利状态，未来股价存在进一步回调的机会，可以逢低买入，长期持有。在政策利好和基本面良好的加持下，这支股票的前景不错。
+
+6. `NVTA`<span id="nvta-01-07"></span>
+
+    技术面观察，
+    - k线位于`BBI`上方，多头微弱优势。
+
+    - k线和`BOLL`中轨基本重合，且今天收盘价向上突破`BOLL`中轨，如果第二个交易日向上突破坐实，那么未来进一步上涨的概率高。
+
+    ![img](https://github.com/SinestroEdmonce/SinestroEdmonce.github.io/raw/master/images/posts/stocks/20210107/nvta_20210107.jpg)
+
+    **预测**：这只股票属于医疗概念，生命科学类股票，短期来看如果向上突破`BOLL`中轨坐实，会继续上涨行情，长期来看在拜登医疗政策利好下，可以逢低买入，长期持有。
+
+7. `XPEV`<span id="nvta-01-07"></span>
+
+    技术面观察，
+    - k线位于`BBI`上方，多头微弱优势。
+
+    - k线和`BOLL`中轨基本重合，且今天收盘价向上突破`BOLL`中轨，如果第二个交易日向上突破坐实，那么未来进一步上涨的概率高。
+
+    ![img](https://github.com/SinestroEdmonce/SinestroEdmonce.github.io/raw/master/images/posts/stocks/20210107/xpev_20210107.jpg)
+
+    **预测**：后市看涨，短期来看如果向上突破`BOLL`中轨坐实，会继续上涨行情，若上破失败，则可能进一步在`BOLL`下轨附近调整。
