@@ -674,11 +674,11 @@ topmost: true
 
     - k线位于`BOLL`中轨上方，`BOLL`呈现出高位紧口喇叭的态势。
 
-    - `MACD`有抬头迹象，并且筹码集中度较高，短期哪可能出现拉升。
+    - `MACD`有抬头迹象，并且筹码集中度较高，短期可能出现拉升。
 
     ![img](https://github.com/SinestroEdmonce/SinestroEdmonce.github.io/raw/master/images/posts/stocks/20210105/jwn_20210105.jpg)
 
-    **预测**：由于横盘整理时间很长，从技术面上来讲，筹码集中度高，拉升阻力小，未来可能会出现新的上涨行情，但也有可能继续横盘整理来吸筹。
+    **预测**：由于横盘整理时间很长，从技术面上来讲，筹码集中度高，拉升阻力小，未来可能会出现新的上涨行情，但也有可能继续横盘整理来吸筹，不过可以考虑建立底仓。
 
 
 ### 2021-01-07
@@ -841,3 +841,59 @@ topmost: true
     ![img](https://github.com/SinestroEdmonce/SinestroEdmonce.github.io/raw/master/images/posts/stocks/20210108/nvta_20210108.jpg)
 
     **预测**：若坐实“黄昏之星”的k线组合，则短期后市看跌。但若坐实`BOLL`中轨，由于筹码相对集中，未来仍有一小波涨幅。
+
+
+### 2021-01-12
+
+以下是2020年01月12日（PST）美股观察，分析及预测。
+
+#### 大盘整体观察
+
+以下是大盘整体观察，分析及预测。
+
+1. 标普指数<span id="spx-01-12"></span>
+
+    技术面观察，
+    - k线位于`BBI`上方，多头微弱优势。
+
+    - k线位于`BOLL`中轨上方，但k线向下回调到`BOLL`上轨下方，向下突破了上轨，行情走弱。
+
+    - `WMSR`离开顶部，但短期存在二次探顶的可能。
+
+    ![img](https://github.com/SinestroEdmonce/SinestroEdmonce.github.io/raw/master/images/posts/stocks/20210112/spx_20210112.jpg)
+
+    **预测**：短期内大盘仍会处于震荡整理的行情，可能会继续小幅下行，等待`BOLL`中轨的支撑。
+
+2. 纳斯达克指数和道琼斯指数基本和上述相仿。
+
+#### 个股观察、分析及预测
+
+1. 以下个股未来走势维持之前的判断，可以点击查看其最近的分析和预测
+
+    - [`M`](#m-01-05)，[`JWN`](#jwn-01-05)，[`JKS`](#jks-12-24)，[`NVTA`](#nvta-01-08)，[`PFE`](#pfe-12-24)，[`IQ`](#iq-12-29)，[`TDOC`](#tdoc-12-30)，[`JMIA`](#jmia-01-04)，[`PLTR`](#pltr-01-07)，[`SNOW`](#pltr-01-07)，[`FSLY`](#pltr-01-07)，[`SUNW`](#sunw-01-07)，[`FCEL`](#fcel-01-07)，[`SPWR`](#spwr-01-07)，[`XPEV`](#xpev-01-07)
+
+2. `FSR`<span id="fsr-01-12"></span>
+
+    技术面观察，
+    - k线位于`BBI`下方，空头微弱优势。
+
+    - k线位于`BOLL`中轨下方，仍然处于弱势行情，盘整仍然可能会持续。
+
+    - 筹码进一步集中，目前拉升阻力已经不高，但仍然有可能进一步吸筹。
+
+    ![img](https://github.com/SinestroEdmonce/SinestroEdmonce.github.io/raw/master/images/posts/stocks/20210112/fsr_20210112.jpg)
+
+    **预测**：短期后市仍然可能延续横盘整理的行情，但只要股价不向下突破`BOLL`下轨（概率较低），那么在14-15这个价格区间是比较合适的建仓位置，未来筹码进一步集中后拉升概率高。
+
+3. `AAL`<span id="aal-01-12"></span>
+
+    技术面观察，
+    - k线位于`BBI`下方，空头微弱优势。
+
+    - k线位于`BOLL`中轨下方，仍然处于弱势行情，盘整仍然可能会持续。
+
+    - 筹码集中度高，可能横盘整理一小段时间后出现拉升。
+
+    ![img](https://github.com/SinestroEdmonce/SinestroEdmonce.github.io/raw/master/images/posts/stocks/20210112/aal_20210112.jpg)
+
+    **预测**：和[`FSR`](#fsr-01-12)类似，短期后市仍然可能延续横盘整理的行情，但只要股价不向下突破`BOLL`下轨（概率较低），那么在14-15这个价格区间可以适当建立底仓，等待后续拉涨。
