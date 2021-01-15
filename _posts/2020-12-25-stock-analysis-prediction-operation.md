@@ -953,4 +953,34 @@ topmost: true
 
     ![img](https://github.com/SinestroEdmonce/SinestroEdmonce.github.io/raw/master/images/posts/stocks/20210113/amd_20210113.jpg)
 
-    **预测**：短期后市仍然可能延续横盘整理的行情，但只要股价不向下突破`BOLL`下轨（概率较低），那么可以在`BOLL`下轨附近逢低买入。
+    **预测**：短期后市仍然可能延续横盘整理，小幅下跌的行情，但只要股价不向下突破`BOLL`下轨（概率较低），那么可以在`BOLL`下轨附近逢低买入。
+
+
+### 2021-01-14
+
+以下是2021年01月14日（PST）美股观察，分析及预测。
+
+#### 大盘整体观察
+
+以下是大盘整体观察，分析及预测。
+
+1. 标普指数<span id="spx-01-14"></span>
+
+    技术面观察，
+    - k线位于`BBI`上方，但离`BBI`较近，多空均衡。
+
+    - k线位于`BOLL`中轨上方，横盘整理等待中轨支撑。
+
+    - `WMSR`继续远离顶部，进一步消化超买压力。
+
+    ![img](https://github.com/SinestroEdmonce/SinestroEdmonce.github.io/raw/master/images/posts/stocks/20210114/spx_20210114.jpg)
+
+    **预测**：短期内大盘仍会处于震荡整理的行情，可能呈现小涨小跌的行情，等待`BOLL`中轨的支撑。
+
+2. 纳斯达克指数和道琼斯指数基本和上述相仿。
+
+#### 个股观察、分析及预测
+
+1. 以下个股未来走势维持之前的判断，可以点击查看其最近的分析和预测
+
+    - [`M`](#m-01-05)，[`JWN`](#jwn-01-05)，[`JKS`](#jks-12-24)，[`PFE`](#pfe-12-24)，[`IQ`](#iq-12-29)，[`TDOC`](#tdoc-12-30)，[`JMIA`](#jmia-01-04)，[`PLTR`](#pltr-01-07)，[`SNOW`](#pltr-01-07)，[`FSLY`](#pltr-01-07)，[`SUNW`](#sunw-01-07)，[`FCEL`](#fcel-01-07)，[`SPWR`](#spwr-01-07)，[`XPEV`](#xpev-01-07)，[`FSR`](#fsr-01-12)，[`AAL`](#aal-01-12)，[`NVTA`](#aal-01-13)，[`AMD`](#amd-01-13)
