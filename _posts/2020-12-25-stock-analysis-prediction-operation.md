@@ -962,7 +962,10 @@ topmost: true
 
 #### 大盘整体观察
 
-以下是大盘整体观察，分析及预测。
+以下是大盘整体观察，分析及预测。消息面上，
+
+- 美联储主席鲍威尔承诺持续低利率，
+- 拜登推出进一步扩大纾困法案的计划，每人增加1400美元的救济金。
 
 1. 标普指数<span id="spx-01-14"></span>
 
@@ -984,3 +987,66 @@ topmost: true
 1. 以下个股未来走势维持之前的判断，可以点击查看其最近的分析和预测
 
     - [`M`](#m-01-05)，[`JWN`](#jwn-01-05)，[`JKS`](#jks-12-24)，[`PFE`](#pfe-12-24)，[`IQ`](#iq-12-29)，[`TDOC`](#tdoc-12-30)，[`JMIA`](#jmia-01-04)，[`PLTR`](#pltr-01-07)，[`SNOW`](#pltr-01-07)，[`FSLY`](#pltr-01-07)，[`SUNW`](#sunw-01-07)，[`FCEL`](#fcel-01-07)，[`SPWR`](#spwr-01-07)，[`XPEV`](#xpev-01-07)，[`FSR`](#fsr-01-12)，[`AAL`](#aal-01-12)，[`NVTA`](#aal-01-13)，[`AMD`](#amd-01-13)
+
+
+### 2021-01-15
+
+以下是2021年01月14日（PST）美股观察，分析及预测。
+
+#### 大盘整体观察
+
+以下是大盘整体观察，分析及预测。
+
+1. 标普指数<span id="spx-01-14"></span>
+
+    技术面观察，
+    - k线和`BBI`基本重合，多空均势，但由于是收跌阴线，空头略占优势。
+
+    - k线位于`BOLL`中轨上方，基本找到了`BOLL`中轨的支撑，仍有进一步靠近`BOLL`中轨的可能，但短期后市出现反弹的概率较高。
+
+    - `WMSR`继续远离顶部，基本消化超买压力。
+
+    ![img](https://github.com/SinestroEdmonce/SinestroEdmonce.github.io/raw/master/images/posts/stocks/20210115/spx_20210115.jpg)
+
+    **预测**：短期内大盘或继续整理，若`BOLL`中轨的支撑基本坐实，未来出现反弹上涨行情的概率高。
+
+2. 纳斯达克指数和道琼斯指数基本和上述相仿。
+
+#### 个股观察、分析及预测
+
+1. 以下个股未来走势维持之前的判断，可以点击查看其最近的分析和预测
+
+    - [`M`](#m-01-05)，[`JWN`](#jwn-01-05)，[`JKS`](#jks-12-24)，[`PFE`](#pfe-12-24)，[`IQ`](#iq-12-29)，[`TDOC`](#tdoc-12-30)，[`JMIA`](#jmia-01-04)，[`SNOW`](#pltr-01-07)，[`FSLY`](#pltr-01-07)，[`SUNW`](#sunw-01-07)，[`FCEL`](#fcel-01-07)，[`SPWR`](#spwr-01-07)，[`XPEV`](#xpev-01-07)，[`FSR`](#fsr-01-12)，[`AAL`](#aal-01-12)，[`NVTA`](#aal-01-13)，[`AMD`](#amd-01-13)
+
+2. `PLTR`<span id="pltr-01-15"></span>
+
+    技术面观察，
+    - k线和`BBI`基本重合，多空均势，但由于是收跌阴线，空头略占优势。
+
+    - k线和`BOLL`中轨基本重合，再一次上破`BOLL`中轨失败，在接连两次突破三角形上沿失败后，后市需要谨慎持仓。
+
+    ![img](https://github.com/SinestroEdmonce/SinestroEdmonce.github.io/raw/master/images/posts/stocks/20210115/pltr_20210115.jpg)
+
+    **预测**：短期内可能重新延续整理行情，向三角形下沿震荡，在下方积蓄力量再次尝试突破，若三次突破失败，则可能向下突破形成下跌态势。
+
+3. `BIDU`<span id="bidu-01-15"></span>
+
+    技术面观察，
+    - k线位于`BBI`上方，多头优势。
+
+    - k线位于`BOLL`中轨上方，仍然处于上涨行情。
+
+    ![img](https://github.com/SinestroEdmonce/SinestroEdmonce.github.io/raw/master/images/posts/stocks/20210115/bidu_20210115.jpg)
+
+    **预测**：短期内可能会横盘等待`BOLL`中轨的支撑，虽然目前股价整体处于高位，但目前来看仍处于上行通道内，再加上`BIDU`最近有利好频出，可以长期持有，其公司价值具有高成长性。
+
+4. `BILI`<span id="bili-01-15"></span>
+
+    技术面观察，
+    - k线位于`BBI`上方，多头优势。
+
+    - k线位于`BOLL`中轨上方，仍然处于上涨行情。
+
+    ![img](https://github.com/SinestroEdmonce/SinestroEdmonce.github.io/raw/master/images/posts/stocks/20210115/bili_20210115.jpg)
+
+    **预测**：和[`BIDU`](#bidu-01-15)类似，短期内可能会横盘等待`BOLL`中轨的支撑，虽然目前股价整体处于高位，但目前来看仍处于上行通道内。除此之外，看好`BILI`2020年Q4财报盈亏平衡，可以在财报前逢低买入持有。
