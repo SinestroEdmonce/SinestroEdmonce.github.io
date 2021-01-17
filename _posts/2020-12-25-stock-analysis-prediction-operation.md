@@ -1016,7 +1016,7 @@ topmost: true
 
 1. 以下个股未来走势维持之前的判断，可以点击查看其最近的分析和预测
 
-    - [`M`](#m-01-05)，[`JWN`](#jwn-01-05)，[`JKS`](#jks-12-24)，[`PFE`](#pfe-12-24)，[`IQ`](#iq-12-29)，[`TDOC`](#tdoc-12-30)，[`JMIA`](#jmia-01-04)，[`SNOW`](#pltr-01-07)，[`FSLY`](#pltr-01-07)，[`SUNW`](#sunw-01-07)，[`FCEL`](#fcel-01-07)，[`SPWR`](#spwr-01-07)，[`XPEV`](#xpev-01-07)，[`FSR`](#fsr-01-12)，[`AAL`](#aal-01-12)，[`NVTA`](#aal-01-13)，[`AMD`](#amd-01-13)
+    - [`M`](#m-01-05)，[`JWN`](#jwn-01-05)，[`JKS`](#jks-12-24)，[`PFE`](#pfe-12-24)，[`IQ`](#iq-12-29)，[`TDOC`](#tdoc-12-30)，[`JMIA`](#jmia-01-04)，[`SUNW`](#sunw-01-07)，[`FCEL`](#fcel-01-07)，[`SPWR`](#spwr-01-07)，[`XPEV`](#xpev-01-07)，[`FSR`](#fsr-01-12)，[`AAL`](#aal-01-12)，[`NVTA`](#aal-01-13)，[`AMD`](#amd-01-13)
 
 2. `PLTR`<span id="pltr-01-15"></span>
 
@@ -1028,6 +1028,8 @@ topmost: true
     ![img](https://github.com/SinestroEdmonce/SinestroEdmonce.github.io/raw/master/images/posts/stocks/20210115/pltr_20210115.jpg)
 
     **预测**：短期内可能重新延续整理行情，向三角形下沿震荡，在下方积蓄力量再次尝试突破，若三次突破失败，则可能向下突破形成下跌态势。
+
+    **相似股票**：`SNOW`<span id="snow-01-15"></span>，`FSLY`<span id="fsly-01-15"></span>
 
 3. `BIDU`<span id="bidu-01-15"></span>
 
