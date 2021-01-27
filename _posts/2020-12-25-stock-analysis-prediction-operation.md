@@ -1070,7 +1070,7 @@ topmost: true
 
     - `WMSR`连续触顶后出现下探，未来大盘继续回调的概率较高。
 
-    spx_20210126.jpg
+    ![img](https://github.com/SinestroEdmonce/SinestroEdmonce.github.io/raw/master/images/posts/stocks/20210126/spx_20210126.jpg)
 
     **预测**：在消息面基本中性的情况下，短期内大盘或继续横盘整理，延续小涨小跌的态势，等待`BOLL`中轨支撑。
 
@@ -1091,7 +1091,7 @@ topmost: true
 
     - `KDJ`、`RSI`和`WMSR`均处于中性状态，但需要注意的是之前这三个指标都是由弱势区进入中性区，也就是弱转强的态势，所以股价可能会尝试突破`BOLL`上轨。
 
-    jks_20210126.jpg
+    ![img](https://github.com/SinestroEdmonce/SinestroEdmonce.github.io/raw/master/images/posts/stocks/20210126/jks_20210126.jpg)
 
     **预测**：短期内可能延续波段上升行情，但在没有强利好支撑下，仍有可能回落`BOLL`中轨附近调整，但若有利好支持则会突破`BOLL`上轨进入强势上涨行情。
 
@@ -1104,7 +1104,7 @@ topmost: true
 
     - k线形成黄昏之星的k线组合，警惕短期内大量筹码获利离场。
 
-    sunw_20210126.jpg
+    ![img](https://github.com/SinestroEdmonce/SinestroEdmonce.github.io/raw/master/images/posts/stocks/20210126/sunw_20210126.jpg)
     
     **预测**：短期内可能会出现回调，横盘等待`BOLL`中轨或10日均线支撑，或者向下主动寻找`BOLL`中轨。
 
@@ -1117,7 +1117,7 @@ topmost: true
 
     - `KDJ`、`RSI`和`WMSR`尚未进入超买区，股价仍有进一步上行的空间。
 
-    fcel_20210126.jpg
+    ![img](https://github.com/SinestroEdmonce/SinestroEdmonce.github.io/raw/master/images/posts/stocks/20210126/fcel_20210126.jpg)
 
     **预测**：后市仍有上涨空间，在之前寻求到`BOLL`中轨支撑后开启了波段行情中的上升段。除此之外，拉涨之前筹码较为集中，目前筹码虽然大量获利，但是离场很少且获利不多，所以总的来看后市看涨。
 
@@ -1128,7 +1128,7 @@ topmost: true
 
     - k线位于`BOLL`中轨上方，但有横盘需求均线或`BOLL`中轨支撑的趋势。
 
-    bili_20210126.jpg
+    ![img](https://github.com/SinestroEdmonce/SinestroEdmonce.github.io/raw/master/images/posts/stocks/20210126/bili_20210126.jpg)
 
     **预测**：短期内可能会横盘等待`BOLL`中轨的支撑，虽然目前股价整体处于高位，仍看好`BILI`2020年Q4财报盈亏平衡，可以在财报前逢低买入持有。
 
